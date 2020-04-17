@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Aquatico;
+    src: url(../assets/fonts/Aquatico-Regular.otf)
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700,800|Quicksand:400,500,600|Mountains+of+Christmas:400,700&display=swap');
+  /*!
+   * Copyright (c) 2018. Octan Grp. All Rights Reserved.
+   * This code is proprietary and the property of Octan Grp.
+   */
+  
+  
+  // Typography
+  $primary-font: Aquatico, Comic Sans MS, Helvetica, sans-serif;
+  $secondary-font: ' Nunito ', sans-serif;
+  $default-font: 'Quicksand', sans-serif;
+  
+  
+  // Colors
+  $body-bg: #f8fafc;
+  $color-primary-lightest: #155477;
+  $color-primary-lighter: #014a67;
+  $color-primary-light: #013753;
+  $color-primary: #01263f;
+  $color-primary-dark: #01213a;
+  $color-primary-darker: #011c35;
+  $color-primary-darkest: #011630;
+  
+  $color-accent-lightest: #58dcd0;
+  $color-accent-lighter: #58dcd0;
+  $color-accent-light: #58dcd0;
+  $color-accent: #58dcd0;
+  $color-accent-dark: #57c8bc;
+  $color-accent-darker: #62b4a8;
+  $color-accent-darkest: #40a094;
+  
+  $primary-semi_transparent: rgba(1, 38, 63, 0.5);
