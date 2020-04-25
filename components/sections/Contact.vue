@@ -59,14 +59,6 @@
 
       <div class="flex justify-center mt-12">
         <div class="mx-2">
-          <button
-            class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
-            @click="showForm = !showForm"
-          >
-            <font-awesome-icon :icon="['fas', 'envelope']"></font-awesome-icon>
-          </button>
-        </div>
-        <div class="mx-2">
           <a target="_blank" href="https://twitter.com/octangrp">
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"

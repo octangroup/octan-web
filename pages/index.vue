@@ -4,6 +4,7 @@
     <AboutSection />
     <ServicesSection />
     <ProcessSection />
+    <PartnersSection />
     <ContactSection />
   </div>
 </template>
@@ -13,6 +14,7 @@ import MainSection from '~/components/sections/Main'
 import AboutSection from '~/components/sections/About'
 import ServicesSection from '~/components/sections/Services'
 import ProcessSection from '~/components/sections/Process'
+import PartnersSection from '~/components/sections/Partners'
 import ContactSection from '~/components/sections/Contact'
 export default {
   components: {
@@ -20,6 +22,7 @@ export default {
     AboutSection,
     ServicesSection,
     ProcessSection,
+    PartnersSection,
     ContactSection
   },
   mounted() {

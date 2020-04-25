@@ -7,13 +7,13 @@
       class="absolute -t-10  xl:w-70  xs:hidden md:w-85 lg:hidden sm:hidden  "
       style="right: -5%"
     >
-      <img src="~/assets/shape.svg" />
+      <img src="/assets/shape.svg" />
     </div>
     <div
       class="absolute  -t-5 w-100 sm:w-90 xl:hidden md:hidden lg:w-85 "
       style="right: -10%"
     >
-      <img src="~/assets/shape.svg" class="lg:-mt-10 sm:-mt-20 xs:-mt-5" />
+      <img src="/assets/shape.svg" class="lg:-mt-10 sm:-mt-20 xs:-mt-5" />
     </div>
     <div
       class="py-3 min-h-screen  sm:min-h-auto xs:min-h-auto h-100 xl:w-85 w-90 -mt-24 xs:mt-12 lg:-mt-32 md:-mt-3  xs:mt-12 lg:mt-3 lg:pt-3 sm:mt-8 mx-auto xl:flex md:flex  lg:flex sm:flex relative"
