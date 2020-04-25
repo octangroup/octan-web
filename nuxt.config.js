@@ -23,11 +23,16 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/styles/app.scss'],
+  css: [
+    '~/styles/app.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/fonts/_flaticon.css',
+    '~/assets/fonts/flaticonV2/flaticon.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/fontawesome.js'],
   /*
    ** Nuxt.js dev-modules
    */
