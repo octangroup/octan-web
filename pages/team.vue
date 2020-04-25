@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="bg-primary p-0 pt-6 z-50 relative">
+    <div class="bg-primary  pt-8 z-50 relative">
       <div class="px-4 text-center py-12 xl:w-50 lg:w-75 w-80  mx-auto">
         <h1
           class="text-accent font-primary my-12 lg:text-3xl sm:text-2xl xs:text-2xl md:text-2xl text-4xl"

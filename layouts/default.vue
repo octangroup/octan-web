@@ -60,9 +60,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.-ml-70\%-temp {
-  margin-left: -70%;
-}
-</style>
