@@ -46,22 +46,22 @@ export default {
       services: [
         {
           title: 'Web Development',
-          icon: '/icons/sketch.svg',
+          icon: '/icons/services/sketch.svg',
           bottomRight: true
         },
         {
           title: 'Mobile App Development',
-          icon: '/icons/application.svg',
+          icon: '/icons/services/application.svg',
           bottomLeft: true
         },
         {
           title: 'Graphic Design & Branding',
-          icon: '/icons/graphic.svg',
+          icon: '/icons/services/graphic.svg',
           topRight: true
         },
         {
           title: 'Search Engine Optimization (SEO)',
-          icon: '/icons/seo.svg',
+          icon: '/icons/services/seo.svg',
           topLeft: true
         }
       ]
