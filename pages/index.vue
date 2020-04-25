@@ -1,10 +1,15 @@
 <template>
-  <div class="container"></div>
+  <div class="w-100 relative">
+    <MainSection />
+  </div>
 </template>
 
 <script>
+import MainSection from '~/components/sections/Main'
 export default {
-  components: {},
+  components: {
+    MainSection
+  },
   mounted() {
     this.$store.dispatch('navbar/setTransparentBackground', true)
     this.$store.dispatch('navbar/setFixedPosition', false)

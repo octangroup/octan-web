@@ -21,7 +21,7 @@
         ></div>
       </div>
     </div>
-    <div class="panel mt-0 py-6 w-85  md:w-95 xs:w-100 sm:w-100 mx-auto">
+    <div class="px-2 mt-0 py-6 w-85  md:w-95 xs:w-100 sm:w-100 mx-auto">
       <div class="p-8 text-center sm:px-0">
         <TeamMember v-for="(member, i) in members" :key="i" :member="member" />
       </div>

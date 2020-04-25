@@ -44,6 +44,11 @@ export default {
         {
           link: '/#services',
           label: 'Portfolio'
+        },
+        {
+          link: '/#contact-us',
+          label: 'Contact Us',
+          button: true
         }
       ]
     }

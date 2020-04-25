@@ -9,28 +9,34 @@
     <div class="xl:w-85 lg:w-90 xs:w-90 sm:w-90 md:w-90 flex mx-auto py-2 mx-0">
       <ul class="w-50 lg:w-40 list mx-0 px-0">
         <li class="w-25 xs:w-50 sm:w-40 mx-0 px-0">
-          <nuxt-link to="/"><Logo /></nuxt-link>
+          <nuxt-link to="/">
+            <Logo />
+          </nuxt-link>
         </li>
       </ul>
       <ul
         class="list text-right w-50 lg:w-60  ml-auto my-2 hidden xl:block lg:block px-0 mr-0  text-sm"
       >
-        <li v-for="(item, i) in items" :key="i" class="inline-block mx-4">
-          <nuxt-link :to="item.link" class="inherit-color no-underline">{{
-            item.label
-          }}</nuxt-link>
-        </li>
-        <li class="inline-block ml-3 mr-0 lg:mr-0">
-          <nuxt-link to="/#contact-us" class="inherit-color no-underline">
+        <li
+          v-for="(item, i) in items"
+          :key="i"
+          :class="{ 'mr-5': i + 1 < items.length }"
+          class="inline-block ml-5 text-sm font-medium"
+        >
+          <nuxt-link :to="item.link" class="inherit-color no-underline">
+            <span v-if="!item.button">
+              {{ item.label }}
+            </span>
             <button
+              v-else
               :class="[
                 transparent
-                  ? 'btn-outline-primary text-primary hover:text-white'
+                  ? 'btn-outline-primary text-primary hover:text-white focus:text-white'
                   : 'btn-outline-white text-white hover:bg-white hover:text-primary'
               ]"
               class="btn transition-250ms rounded-full border-1 mx-0"
             >
-              Contact Us
+              {{ item.label }}
             </button>
           </nuxt-link>
         </li>
