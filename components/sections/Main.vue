@@ -16,7 +16,7 @@
       <img src="~/assets/shape.svg" class="lg:-mt-10 sm:-mt-20 xs:-mt-5" />
     </div>
     <div
-      class="py-3 min-h-screen  sm:min-h-auto xs:min-h-auto h-100 w-85 lg:w-90 -mt-24 xs:mt-12 lg:-mt-32 md:-mt-3  xs:mt-12 lg:mt-3 lg:pt-3  sm:mt-12 mx-auto md:w-90 xs:w-100 sm:w-95 xl:flex md:flex  lg:flex sm:flex relative"
+      class="py-3 min-h-screen  sm:min-h-auto xs:min-h-auto h-100 xl:w-85 w-90 -mt-24 xs:mt-12 lg:-mt-32 md:-mt-3  xs:mt-12 lg:mt-3 lg:pt-3 sm:mt-8 mx-auto xl:flex md:flex  lg:flex sm:flex relative"
     >
       <div class="flex items-end relative w-60 md:w-55 pb-6 xs:w-95 mx-auto">
         <div
@@ -28,7 +28,7 @@
             CREATIVITY, QUALITY AND RELIABILITY
           </h1>
           <p
-            class="text-white xs:mx-auto xl:w-70 lg:w-80 lg:my-6 my-12 sm:my-6 xs:my-3 leading-normal md:w-70 text-xl lg:text-lg text-base  xs:mt-12 wow bounceInUp"
+            class="text-white xs:mx-auto xl:w-70 lg:w-80 lg:my-6 my-12 sm:my-6 xs:my-8 leading-normal md:w-70 text-xl xs:text-lg sm:text-lg text-base  xs:mt-12 wow bounceInUp"
           >
             Outstanding systems that enhance people’s daily lives are developed
             here.
@@ -45,12 +45,12 @@
         </div>
       </div>
       <div
-        class="flex items-center relative w-40 md:w-45 mt-32 lg:mt-10 sm:mt-0 sm:pt-3 pt-12"
+        class="flex items-center relative w-40 md:w-45 mt-32 lg:mt-10 sm:mt-0 sm:pt-6 pt-12"
       >
         <QuotesCard />
       </div>
     </div>
-    <div id="main-section" class="absolute w-100 z-999 b-5 ">
+    <div id="main-section" class="absolute w-100 z-999 b-5 xs:b-10">
       <div
         class="border-1 border-solid border-white h-rem-10 w-rem-6 rounded-full mx-auto overflow-hidden md:invisible sm:invisible xxs:invisible"
       >

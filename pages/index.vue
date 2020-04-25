@@ -1,14 +1,17 @@
 <template>
   <div class="w-100 relative">
     <MainSection />
+    <AboutSection />
   </div>
 </template>
 
 <script>
 import MainSection from '~/components/sections/Main'
+import AboutSection from '~/components/sections/About'
 export default {
   components: {
-    MainSection
+    MainSection,
+    AboutSection
   },
   mounted() {
     this.$store.dispatch('navbar/setTransparentBackground', true)
