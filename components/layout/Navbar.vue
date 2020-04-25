@@ -84,16 +84,40 @@ export default {
       default: () => []
     }
   },
+  data() {
+    return {
+      fixed: false,
+      transparent: true
+    }
+  },
   computed: {
     ...mapState({
-      transparent: (state) => state.navbar.transparent,
-      fixed: (state) => state.navbar.fixed,
       showSidebar: (state) => state.navbar.showSidebar
     })
+  },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to, from) {
+        this.checkRoute(to.path)
+      }
+    }
+  },
+  created() {
+    this.checkRoute(this.$route.path)
   },
   methods: {
     toggleSidebar() {
       this.$store.dispatch('navbar/toggleSidebar', true)
+    },
+    checkRoute(route) {
+      if (route === '/') {
+        this.fixed = false
+        this.transparent = true
+        return
+      }
+      this.fixed = true
+      this.transparent = false
     }
   }
 }
