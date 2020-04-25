@@ -20,7 +20,7 @@
     </div>
 
     <h3
-      class=" my-1 text-accent xl:pt-6 lg:pt-3 font-bold font-primary text-xl md:text-base xs:text-base sm:text-base sm:ml-3 xs:text-center sm:my-3 xs:my-3"
+      class=" my-1 text-accent xl:pt-6 lg:pt-3 font-bold font-primary text-xl md:text-base xs:text-xs sm:text-base xs:text-center sm:my-3 xs:my-3"
     >
       {{ title }}
     </h3>
