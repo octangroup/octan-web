@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="bg-primary p-0 mt-6 z-50 relative">
+    <div class="bg-primary  pt-8 z-50 relative">
       <div class="px-4 text-center py-12 xl:w-50 lg:w-75 w-80  mx-auto">
         <h1
           class="text-accent font-primary my-12 lg:text-3xl sm:text-2xl xs:text-2xl md:text-2xl text-4xl"
@@ -21,7 +21,7 @@
         ></div>
       </div>
     </div>
-    <div class="panel mt-0 py-6 w-85  md:w-95 xs:w-100 sm:w-100 mx-auto">
+    <div class="px-2 mt-0 py-6 w-85  md:w-95 xs:w-100 sm:w-100 mx-auto">
       <div class="p-8 text-center sm:px-0">
         <TeamMember v-for="(member, i) in members" :key="i" :member="member" />
       </div>

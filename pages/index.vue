@@ -1,10 +1,27 @@
 <template>
-  <div class="container"></div>
+  <div class="w-100 relative">
+    <MainSection />
+    <AboutSection />
+    <ServicesSection />
+    <ProcessSection />
+    <ContactSection />
+  </div>
 </template>
 
 <script>
+import MainSection from '~/components/sections/Main'
+import AboutSection from '~/components/sections/About'
+import ServicesSection from '~/components/sections/Services'
+import ProcessSection from '~/components/sections/Process'
+import ContactSection from '~/components/sections/Contact'
 export default {
-  components: {},
+  components: {
+    MainSection,
+    AboutSection,
+    ServicesSection,
+    ProcessSection,
+    ContactSection
+  },
   mounted() {
     this.$store.dispatch('navbar/setTransparentBackground', true)
     this.$store.dispatch('navbar/setFixedPosition', false)

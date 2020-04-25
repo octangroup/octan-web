@@ -44,6 +44,11 @@ export default {
         {
           link: '/#services',
           label: 'Portfolio'
+        },
+        {
+          link: '/#contact-us',
+          label: 'Contact Us',
+          button: true
         }
       ]
     }
@@ -55,9 +60,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.-ml-70\%-temp {
-  margin-left: -70%;
-}
-</style>
