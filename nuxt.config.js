@@ -26,13 +26,17 @@ export default {
   css: [
     '~/styles/app.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/assets/fonts/_flaticon.css',
-    '~/assets/fonts/flaticonV2/flaticon.css'
+    '~/static/assets/fonts/_flaticon.css',
+    '~/static/assets/fonts/flaticonV2/flaticon.css'
   ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/fontawesome.js'],
+  plugins: [
+    '~/plugins/fontawesome.js',
+    '~/plugins/anime.js',
+    { src: '~/plugins/aos', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -49,7 +53,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-responsive-loader'
   ],
   /*
    ** Axios module configuration

@@ -5,15 +5,11 @@
       The feeling's mutual.
     </SectionHeader>
     <div class="flex flex-wrap items-center justify-center text-center py-8">
-      <div
-        v-for="(partner, i) in list"
-        :key="i"
-        class="w-30 mx-auto my-6 portfolio-icon transition-1s"
-      >
+      <div v-for="(partner, i) in list" :key="i" class="w-30 mx-auto my-6">
         <div>
           <a
             :href="partner.link"
-            class="inherit-color no-underline"
+            class="inherit-color no-underline portfolio-icon transition-1s"
             target="_blank"
             ><img :src="partner.logo" class="w-50"
           /></a>

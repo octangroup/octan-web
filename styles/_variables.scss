@@ -1,9 +1,9 @@
 @font-face {
     font-family: Aquatico;
-    src: url(../assets/fonts/Aquatico-Regular.otf)
+    src: url(../static/assets/fonts/Aquatico-Regular.otf)
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
   /*!
    * Copyright (c) 2018. Octan Grp. All Rights Reserved.
    * This code is proprietary and the property of Octan Grp.
@@ -12,7 +12,7 @@
   
   // Typography
   $primary-font: Aquatico, Comic Sans MS, Helvetica, sans-serif;
-  $secondary-font: ' Nunito ', sans-serif;
+  // $secondary-font: 'Nunito ', sans-serif;
   $default-font: 'Quicksand', sans-serif;
   
   

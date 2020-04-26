@@ -5,8 +5,8 @@
 
 .curves-pattern {
   height: 115px;
-  -webkit-mask-image: url("../static/img/pattern.png");
-  mask-image: url("../static/img/pattern.png");
+  -webkit-mask-image: url("/img/pattern.png");
+  mask-image: url("/img/pattern.png");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: repeat-x;
@@ -17,7 +17,7 @@
 
 .curves-pattern-overlay:after,
 .curves-pattern-overlay:before {
-  background: url("../static/img/pattern_2.png") repeat-x 50%;
+  background: url("/img/pattern_2.png") repeat-x 50%;
   background-size: 1440px;
   content: "";
   display: block;
@@ -151,9 +151,9 @@ h6 {
   position: relative;
 }
 
-html {
-  font-weight: 500;
-}
+// html {
+//   font-weight: 500;
+// }
 
 @-webkit-keyframes growing-animation {
   0% {

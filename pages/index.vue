@@ -4,6 +4,7 @@
     <AboutSection />
     <ServicesSection />
     <ProcessSection />
+    <PortfolioSection />
     <PartnersSection />
     <ContactSection />
   </div>
@@ -14,6 +15,7 @@ import MainSection from '~/components/sections/Main'
 import AboutSection from '~/components/sections/About'
 import ServicesSection from '~/components/sections/Services'
 import ProcessSection from '~/components/sections/Process'
+import PortfolioSection from '~/components/sections/Portfolio'
 import PartnersSection from '~/components/sections/Partners'
 import ContactSection from '~/components/sections/Contact'
 export default {
@@ -23,7 +25,8 @@ export default {
     ServicesSection,
     ProcessSection,
     PartnersSection,
-    ContactSection
+    ContactSection,
+    PortfolioSection
   },
   mounted() {
     this.$store.dispatch('navbar/setTransparentBackground', true)

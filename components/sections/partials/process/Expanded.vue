@@ -7,7 +7,11 @@
         :title="items[0].title"
         :description="items[0].description"
       />
-      <ProcessArrow class="w-40" icon="/icons/process/arrow-1.svg" />
+      <ProcessArrow
+        class="w-40"
+        animation="fade-right"
+        icon="/icons/process/arrow-1.svg"
+      />
       <ProcessCard
         class="w-30 text-right xs:text-center xs:pt-16"
         :index="2"
@@ -18,11 +22,13 @@
     <ProcessArrow
       class="w-10 float-right xl:pt-16 ml-auto xl:mr-6 "
       icon="/icons/process/arrow-2.svg"
+      animation="fade-left"
     />
     <div class="xl:flex md:flex lg:flex sm:flex pt-16 ">
       <ProcessArrow
         class="w-50 px-12 sm:pr-3 lg:px-2  md:pt-5 md:px-8 mt-12"
         icon="/icons/process/arrow-3.svg"
+        animation="fade-left"
       />
       <ProcessCard
         class="w-50 md:px-3 px-12 xl:pt-16 ml-auto xl:mr-4"
@@ -42,6 +48,7 @@
         <ProcessArrow
           class="w-10 lg:w-15 md:w-15 mx-auto -mt-20 mb-12 md:mb-8"
           icon="/icons/process/arrow-4.svg"
+          animation="fade-down"
         />
         <ProcessCard
           class="w-50 ml-auto px-12 lg:px-10 md:px-10 mr-6 pt-16 md:pt-6"

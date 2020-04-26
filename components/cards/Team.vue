@@ -5,7 +5,7 @@
     <div
       class="h-rem-74 w-rem-74 sm:h-rem-64 sm:w-rem-64 xxs:h-rem-48 xxs:w-rem-48 rounded-full overflow-hidden mx-auto my-2"
     >
-      <img :src="member.avatar" class="clip-full" />
+      <img :srcset="member.avatar.srcSet" class="clip-full" />
     </div>
     <div class="px-3 py-2">
       <h5 class="my-2 font-primary">{{ member.names }}</h5>

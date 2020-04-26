@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[bottomLeft || topLeft ? 'ml-auto' : 'mr-auto']"
-    class="w-50 xs:w-40 px-3 xs:px-0 relative my-4"
+    class="w-50 xs:w-40 xs:px-0 relative my-4"
   >
     <div class="w-100">
       <div
@@ -10,13 +10,14 @@
       ></div>
       <div>
         <div
+          ref="service"
           :class="{
             'l-20': topRight || bottomRight,
             'r-20': bottomLeft || topLeft,
             't-10': bottomLeft || bottomRight,
             '-t-10': topLeft || topRight
           }"
-          class="rounded-full absolute
+          class="rounded-full absolute service-bubble-el
                             mt-0 mb-0 xl:h-rem-40 xl:w-rem-40 h-rem-32 w-rem-32 xs:h-rem-24 xs:w-rem-24 mx-auto text-center shadow-md flex items-center justify-center text-2xl text-white"
           style="background: linear-gradient(to right, #155477, #01263f);"
         >
@@ -25,7 +26,7 @@
       </div>
     </div>
     <h4
-      :class="{ 'text-right': bottomLeft || topLeft }"
+      :class="[bottomLeft || topLeft ? 'text-right pl-3' : 'text-left pr-3']"
       class="pt-4 text-lg leading-normal md:text-base sm:text-base xs:text-xs text-base font-primary"
     >
       {{ title }}
