@@ -42,8 +42,8 @@ export default {
           label: 'What We Do'
         },
         {
-          link: '/#services',
-          label: 'Portfolio'
+          link: '/works',
+          label: 'Works'
         },
         {
           link: '/#contact-us',

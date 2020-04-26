@@ -23,7 +23,10 @@
           :class="{ 'mr-5': i + 1 < items.length }"
           class="inline-block ml-5 text-sm font-medium"
         >
-          <nuxt-link :to="item.link" class="inherit-color no-underline">
+          <nuxt-link
+            :to="item.link"
+            class="inherit-color no-underline cursor-pointer"
+          >
             <span v-if="!item.button">
               {{ item.label }}
             </span>

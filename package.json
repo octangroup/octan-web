@@ -28,8 +28,13 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/axios": "^5.10.1",
     "@nuxtjs/dotenv": "^1.4.0",
+    "animejs": "^3.2.0",
+    "aos": "^3.0.0-beta.6",
+    "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
-    "og-css": "^3.0.3"
+    "nuxt-responsive-loader": "^2.0.1",
+    "og-css": "^3.0.3",
+    "vue-animejs": "^2.1.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
