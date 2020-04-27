@@ -33,9 +33,11 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import ServiceCard from '~/components/cards/Service'
 import SectionHeader from '~/components/sections/partials/Header'
 import SectionWrapper from '~/components/sections/partials/Wrapper'
+
 export default {
   name: 'ServiceSection',
   components: {
@@ -71,14 +73,19 @@ export default {
       clientHeight: 0
     }
   },
+  computed: {
+    ...mapState({
+      isMobile: (state) => state.window.isMobile
+    })
+  },
   created() {
     if (process.client) {
       // eslint-disable-next-line nuxt/no-globals-in-created
-      window.addEventListener('scroll', this.foo)
+      window.addEventListener('scroll', this.renderAnimation)
     }
   },
   destroyed() {
-    window.removeEventListener('scroll', this.foo)
+    window.removeEventListener('scroll', this.renderAnimation)
   },
   mounted() {
     this.animation = this.$anime.timeline({
@@ -108,9 +115,11 @@ export default {
     this.clientHeight = this.$refs.wrapper.clientHeight
   },
   methods: {
-    foo() {
+    renderAnimation() {
+      // if (!this.isMobile) {
       const persentage = this.getScrollPercent()
       this.animation.seek(this.animation.duration * (persentage * 0.01))
+      // }
     },
     getScrollPercent() {
       const rect = this.$refs.wrapper.getBoundingClientRect()

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-primary-darker relative">
-    <div class="relative overflow-hidden xs:h-px-300">
+    <div class="relative overflow-hidden">
       <div class="absolute l-0 w-100 h-100 z-999 py-12">
         <div
           class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 z-0 t-0"
@@ -26,7 +26,7 @@ import MainSection from '~/components/sections/partials/portfolio/Main'
 import SimplifiedSection from '~/components/sections/partials/portfolio/Simplified'
 
 export default {
-  name: 'PartnersSection',
+  name: 'PortfolioSection',
   components: {
     SectionHeader,
     MainSection,

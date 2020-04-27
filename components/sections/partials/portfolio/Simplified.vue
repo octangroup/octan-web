@@ -4,10 +4,10 @@
     class="md:ml-12 md:pl-12 sm:ml-12 xs:mt-12 xs:m-0  relative flex flex-col z-10 items-center w-100 h-auto z-90 xl:hidden lg:hidden"
   >
     <div
-      class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-content-between transform-3d bg-transparent z-0"
+      class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-between transform-3d bg-transparent z-0"
     >
       <div
-        class="relative flex flex-wrap flex-col justify-between bg-transparent transform-0-50-origin transform-3d align-content-stretch items-center justify-content-start z-0 transform-45deg-3d"
+        class="relative flex flex-wrap flex-col justify-between bg-transparent transform-0-50-origin transform-3d align-stretch items-center justify-start z-0 transform-45deg-3d"
       >
         <PortfolioGroup>
           <div

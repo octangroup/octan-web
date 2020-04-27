@@ -117,6 +117,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import chunk from 'lodash/chunk'
 import PortfolioGroup from '~/components/sections/partials/portfolio/Group'
 import PortfolioCard from '~/components/cards/Portfolio'
@@ -158,6 +159,9 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      isMobile: (state) => state.window.isMobile
+    }),
     list() {
       let list = chunk(this.project.pictures, this.rowChunks)
       list = chunk(list, 2)
@@ -187,14 +191,16 @@ export default {
   },
   methods: {
     scrollingListener() {
-      const persentage = this.getScrollPercent()
-      this.animationFly.seek(this.animationFly.duration * (persentage * 0.01))
-      this.animationShadow.seek(
-        this.animationShadow.duration * (persentage * 0.01)
-      )
-      this.animationFixedShadow.seek(
-        this.animationFixedShadow.duration * (persentage * 0.01)
-      )
+      if (!this.isMobile) {
+        const persentage = this.getScrollPercent()
+        this.animationFly.seek(this.animationFly.duration * (persentage * 0.01))
+        this.animationShadow.seek(
+          this.animationShadow.duration * (persentage * 0.01)
+        )
+        this.animationFixedShadow.seek(
+          this.animationFixedShadow.duration * (persentage * 0.01)
+        )
+      }
     },
     getScrollPercent() {
       const rect = this.$refs.wrapper.getBoundingClientRect()
