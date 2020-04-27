@@ -50,7 +50,7 @@
         <QuotesCard />
       </div>
     </div>
-    <div class="absolute w-100 z-999 b-5 xs:b-10">
+    <div class="absolute w-100 z-999 b-5 xs:b-15">
       <div
         class="border-1 border-solid border-white h-rem-10 w-rem-6 rounded-full mx-auto overflow-hidden md:invisible sm:invisible xxs:invisible"
       >

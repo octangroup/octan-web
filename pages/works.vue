@@ -8,8 +8,10 @@
           OUR WORK
         </h1>
         <p class="xl:py-4 xl:text-xl lg:text-lg text-base text-white ">
-          Getting experience while doing what we love, looking forward to
-          building memorable experiences with you
+          All our projects have one thing in common: Whatever should be
+          communicated, we use the most suitable channels to convey your message
+          holistically and to put your brand or your product in the perfect
+          light.
         </p>
       </div>
       <div class="relative overflow-hidden p-0">

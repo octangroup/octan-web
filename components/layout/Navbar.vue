@@ -7,8 +7,8 @@
     class="z-9999 transition-500ms w-100 m-0 t-0 l-0 r-0"
   >
     <div class="xl:w-85 lg:w-90 xs:w-90 sm:w-90 md:w-90 flex mx-auto py-2 mx-0">
-      <ul class="w-50 lg:w-40 list mx-0 px-0">
-        <li class="w-25 xs:w-50 sm:w-40 mx-0 px-0">
+      <ul class="w-50 lg:w-40 list mx-0 px-0 flex items-center">
+        <li class="w-25 xs:w-50 sm:w-40 mx-0 px-0 m-0 py-2 pt-3">
           <nuxt-link to="/">
             <Logo />
           </nuxt-link>
@@ -21,7 +21,7 @@
           v-for="(item, i) in items"
           :key="i"
           :class="{ 'mr-5': i + 1 < items.length }"
-          class="inline-block ml-5 text-sm font-medium cursor-pointer"
+          class="inline-block ml-5 text-sm font-medium cursor-pointer my-2"
         >
           <nuxt-link
             :to="item.link"

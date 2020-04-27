@@ -1,17 +1,19 @@
 <template>
   <div class="bg-primary-darker relative">
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden xs:min-h-px-500">
       <div class="absolute l-0 w-100 h-100 z-999 py-12">
         <div
-          class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 z-0 t-0"
+          class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 xs:opacity-70 z-0 t-0"
         />
         <div class="relative z-5 w-90 xl:w-85 mx-auto py-12">
-          <a class="inherit-color no-underline">
-            <SectionHeader title="Our works" class="w-100" dark>
-              Getting experience while doing what we love, <br />
-              looking forward to building memorable experiences with you
-            </SectionHeader>
-          </a>
+          <div class="w-50 xs:w-65">
+            <a class="inherit-color no-underline">
+              <SectionHeader title="Our works" class="w-100" dark>
+                We enjoy getting experience while doing what we love, <br />
+                looking forward to building memorable experiences with you
+              </SectionHeader>
+            </a>
+          </div>
         </div>
       </div>
       <MainSection :items="items" />
