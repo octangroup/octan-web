@@ -1,5 +1,5 @@
-# octan-web
-
+# octan-web 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dda87934-459a-4123-a008-e937af6708c6/deploy-status)](https://app.netlify.com/sites/mystifying-hypatia-a40bad/deploys)
 > Octan Group website
 
 ## Build Setup
