@@ -6,7 +6,9 @@
         :class="{ '-ml-70%-temp': showSidebar }"
       >
         <Navbar :items="navItems" />
-        <nuxt />
+        <div class="w-100 relative h-100" @click="toggleSidebar">
+          <nuxt />
+        </div>
       </div>
       <Sidebar :items="navItems" />
     </div>
@@ -71,6 +73,11 @@ export default {
   methods: {
     updateWindowSize() {
       this.$store.dispatch('window/updateWidth', window.innerWidth)
+    },
+    toggleSidebar() {
+      if (this.showSidebar) {
+        this.$store.dispatch('navbar/toggleSidebar', false)
+      }
     }
   }
 }

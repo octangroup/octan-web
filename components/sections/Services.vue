@@ -116,10 +116,10 @@ export default {
   },
   methods: {
     renderAnimation() {
-      // if (!this.isMobile) {
-      const persentage = this.getScrollPercent()
-      this.animation.seek(this.animation.duration * (persentage * 0.01))
-      // }
+      if (!this.isMobile) {
+        const persentage = this.getScrollPercent()
+        this.animation.seek(this.animation.duration * (persentage * 0.01))
+      }
     },
     getScrollPercent() {
       const rect = this.$refs.wrapper.getBoundingClientRect()
