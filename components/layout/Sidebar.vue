@@ -15,7 +15,7 @@
         <li
           v-for="(item, i) in items"
           :key="i"
-          class="my-4 text-lg"
+          class="my-4 text-lg  cursor-pointer"
           @click="toggleSidebar"
         >
           <nuxt-link

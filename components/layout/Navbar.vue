@@ -21,7 +21,7 @@
           v-for="(item, i) in items"
           :key="i"
           :class="{ 'mr-5': i + 1 < items.length }"
-          class="inline-block ml-5 text-sm font-medium"
+          class="inline-block ml-5 text-sm font-medium cursor-pointer"
         >
           <nuxt-link
             :to="item.link"

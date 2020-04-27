@@ -34,16 +34,16 @@ export default {
           label: 'Home'
         },
         {
-          link: '/team',
-          label: 'Team'
-        },
-        {
           link: '/#services',
           label: 'What We Do'
         },
         {
           link: '/works',
           label: 'Works'
+        },
+        {
+          link: '/team',
+          label: 'Team'
         },
         {
           link: '/#contact-us',
@@ -57,6 +57,21 @@ export default {
     ...mapState({
       showSidebar: (state) => state.navbar.showSidebar
     })
+  },
+  created() {
+    if (process.client) {
+      // eslint-disable-next-line nuxt/no-globals-in-created
+      window.addEventListener('resize', this.updateWindowSize)
+      this.updateWindowSize()
+    }
+  },
+  destroy() {
+    window.removeEventListener('resize', this.updateWindowSize)
+  },
+  methods: {
+    updateWindowSize() {
+      this.$store.dispatch('window/updateWidth', window.innerWidth)
+    }
   }
 }
 </script>

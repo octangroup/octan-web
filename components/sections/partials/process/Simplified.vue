@@ -8,8 +8,16 @@
         :description="items[0].description"
       />
       <div class="flex w-100 overflow-hidden">
-        <ProcessArrow inner-class="ml-auto rotate-30deg mr-12" class="w-50" />
-        <ProcessArrow inner-class="mr-auto -rotate-30deg ml-12" class="w-50" />
+        <ProcessArrow
+          animation="fade-down-right"
+          inner-class="ml-auto rotate-30deg mr-12"
+          class="w-50"
+        />
+        <ProcessArrow
+          animation="fade-down-left"
+          inner-class="mr-auto -rotate-30deg ml-12"
+          class="w-50"
+        />
       </div>
       <div class="flex">
         <ProcessCard
@@ -26,8 +34,16 @@
         />
       </div>
       <div class="flex w-100 overflow-hidden">
-        <ProcessArrow inner-class="ml-auto -rotate-30deg mr-12" class="w-50" />
-        <ProcessArrow inner-class="mr-auto rotate-30deg ml-12" class="w-50" />
+        <ProcessArrow
+          animation="fade-down-right"
+          inner-class="ml-auto -rotate-30deg mr-12"
+          class="w-50"
+        />
+        <ProcessArrow
+          animation="fade-down-left"
+          inner-class="mr-auto rotate-30deg ml-12"
+          class="w-50"
+        />
       </div>
       <ProcessCard
         class="w-100 text-center"
@@ -35,7 +51,11 @@
         :title="items[3].title"
         :description="items[3].description"
       />
-      <ProcessArrow inner-class="mx-auto " class="w-100" />
+      <ProcessArrow
+        animation="fade-down"
+        inner-class="mx-auto "
+        class="w-100"
+      />
       <ProcessCard
         class="w-100 text-center pt-3"
         :index="5"

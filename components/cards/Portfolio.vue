@@ -6,7 +6,7 @@
     <img
       :srcset="picture.srcSet"
       sizes="(max-width: 991px) 100vw, 24vw"
-      :class="{ 'works-movable-item': !picture.portait }"
+      :class="{ 'works-movable-item': !picture.portait && !mobile }"
       class="h-auto relative z-999 block transform-3d translate-3d-0-0-9"
       style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
     />
@@ -14,8 +14,8 @@
       class="absolute t-0 b-0 r-0 l-0 w-100 h-auto inline-block bg-black-darkest transform-3d transform-50-100-origin z-0 translate-3d-0-0-1"
       style="will-change: opacity, transform; opacity: 0.6; transform:  translate3d(0vw, 0vh, 0px) scale3d(0.930192, 0.930192, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
       :class="{
-        'works-movable-item-shadow': !picture.portait,
-        'works-fixed-item-shadow': picture.portait
+        'works-movable-item-shadow': !picture.portait && !mobile,
+        'works-fixed-item-shadow': picture.portait && !mobile
       }"
     />
   </div>
@@ -32,6 +32,10 @@ export default {
           portait: false
         }
       }
+    },
+    mobile: {
+      type: Boolean,
+      default: false
     }
   }
 }

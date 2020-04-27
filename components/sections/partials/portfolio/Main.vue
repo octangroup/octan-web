@@ -2,7 +2,7 @@
 <template>
   <div
     ref="wrapper"
-    class="t-0 justify-center flex overflow-hidden  sticky z-50 max-w-100 w-100 ml-auto z-0 md:hidden sm:hidden xs:hidden relative"
+    class="t-0 justify-center xl:flex lg:flex overflow-hidden z-50 max-w-100 w-100 ml-auto z-50  hidden relative"
     style="height:120vh"
   >
     <div
@@ -13,7 +13,7 @@
             transform-style: preserve-3d;"
     >
       <div
-        class="flex justify-content-start items-center bg-transparent works-scroll-container"
+        class="flex justify-start items-center bg-transparent works-scroll-container"
         style="will-change: transform; transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
       >
         <PortfolioGroup v-for="(group, i) in list" :key="i">
@@ -35,6 +35,7 @@
   </div>
 </template>
 <script>
+import { mapState } from 'vuex'
 import chunk from 'lodash/chunk'
 import PortfolioGroup from './Group'
 import PortfolioCard from '~/components/cards/Portfolio'
@@ -60,6 +61,9 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      isMobile: (state) => state.window.isMobile
+    }),
     list() {
       let list = chunk(this.items, 3)
       list = chunk(list, 2)
@@ -81,17 +85,19 @@ export default {
   },
   methods: {
     scrollingListener() {
-      const persentage = this.getScrollPercent()
-      this.animationContainer.seek(
-        this.animationContainer.duration * (persentage * 0.01)
-      )
-      this.animationFly.seek(this.animationFly.duration * (persentage * 0.01))
-      this.animationShadow.seek(
-        this.animationShadow.duration * (persentage * 0.01)
-      )
-      this.animationFixedShadow.seek(
-        this.animationFixedShadow.duration * (persentage * 0.01)
-      )
+      if (!this.isMobile) {
+        const persentage = this.getScrollPercent()
+        this.animationContainer.seek(
+          this.animationContainer.duration * (persentage * 0.01)
+        )
+        this.animationFly.seek(this.animationFly.duration * (persentage * 0.01))
+        this.animationShadow.seek(
+          this.animationShadow.duration * (persentage * 0.01)
+        )
+        this.animationFixedShadow.seek(
+          this.animationFixedShadow.duration * (persentage * 0.01)
+        )
+      }
     },
     getScrollPercent() {
       const rect = this.$refs.wrapper.getBoundingClientRect()
