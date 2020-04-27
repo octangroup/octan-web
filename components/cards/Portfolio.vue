@@ -11,13 +11,12 @@
       style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
     />
     <div
-      data-w-id="508d64cb-80bc-4530-6150-374c81f4d787"
       class="absolute t-0 b-0 r-0 l-0 w-100 h-auto inline-block bg-black-darkest transform-3d transform-50-100-origin z-0 translate-3d-0-0-1"
+      style="will-change: opacity, transform; opacity: 0.6; transform:  translate3d(0vw, 0vh, 0px) scale3d(0.930192, 0.930192, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
       :class="{
         'works-movable-item-shadow': !picture.portait,
         'works-fixed-item-shadow': picture.portait
       }"
-      style="will-change: opacity, transform; opacity: 0.6; transform: translate3d(1.39616vw, 1.91972vh, -1px) scale3d(0.930192, 0.930192, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
     />
   </div>
 </template>

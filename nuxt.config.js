@@ -26,6 +26,7 @@ export default {
   css: [
     '~/styles/app.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
+    'animate.css/animate.css',
     '~/static/assets/fonts/_flaticon.css',
     '~/static/assets/fonts/flaticonV2/flaticon.css'
   ],

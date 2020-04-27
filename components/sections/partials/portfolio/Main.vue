@@ -110,8 +110,8 @@ export default {
       })
       this.animationFly = this.$anime({
         targets: '.works-movable-item',
-        translateX: '-9.9214vw',
-        translateY: '-9.9214vh',
+        translateX: -120,
+        translateY: -120,
         delay(el, i) {
           return i * 50
         },
@@ -121,6 +121,8 @@ export default {
       this.animationShadow = this.$anime({
         targets: '.works-movable-item-shadow',
         opacity: '0.2',
+        translateX: 20,
+        translateY: 50,
         autoplay: false,
         delay(el, i) {
           return i * 50
@@ -130,8 +132,8 @@ export default {
       this.animationFixedShadow = this.$anime({
         targets: '.works-fixed-item-shadow',
         opacity: '0.1',
-        translateX: '7vw',
-        translateY: '8.24vw',
+        translateX: 60,
+        translateY: 90,
         translateZ: '-1px',
         delay(el, i) {
           return i * 50
