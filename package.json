@@ -28,6 +28,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/axios": "^5.10.1",
     "@nuxtjs/dotenv": "^1.4.0",
+    "animate.css": "^3.7.2",
     "animejs": "^3.2.0",
     "aos": "^3.0.0-beta.6",
     "lodash": "^4.17.15",
