@@ -22,12 +22,15 @@
     <ProcessArrow
       class="w-10 float-right xl:pt-16 ml-auto xl:mr-6 "
       icon="/icons/process/arrow-2.svg"
+      offset="100"
       animation="fade-left"
     />
     <div class="xl:flex md:flex lg:flex sm:flex pt-16 ">
       <ProcessArrow
         class="w-50 px-12 sm:pr-3 lg:px-2  md:pt-5 md:px-8 mt-12"
         icon="/icons/process/arrow-3.svg"
+        offset="400"
+        duration="800"
         animation="fade-left"
       />
       <ProcessCard
@@ -48,6 +51,7 @@
         <ProcessArrow
           class="w-10 lg:w-15 md:w-15 mx-auto -mt-20 mb-12 md:mb-8"
           icon="/icons/process/arrow-4.svg"
+          offset="200"
           animation="fade-down"
         />
         <ProcessCard

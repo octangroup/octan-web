@@ -10,11 +10,13 @@
       <div class="flex w-100 overflow-hidden">
         <ProcessArrow
           animation="fade-down-right"
+          duration="1500"
           inner-class="ml-auto rotate-30deg mr-12"
           class="w-50"
         />
         <ProcessArrow
           animation="fade-down-left"
+          duration="1500"
           inner-class="mr-auto -rotate-30deg ml-12"
           class="w-50"
         />
@@ -36,11 +38,13 @@
       <div class="flex w-100 overflow-hidden">
         <ProcessArrow
           animation="fade-down-right"
+          duration="1500"
           inner-class="ml-auto -rotate-30deg mr-12"
           class="w-50"
         />
         <ProcessArrow
           animation="fade-down-left"
+          duration="1500"
           inner-class="mr-auto rotate-30deg ml-12"
           class="w-50"
         />
@@ -53,6 +57,7 @@
       />
       <ProcessArrow
         animation="fade-down"
+        duration="1500"
         inner-class="mx-auto "
         class="w-100"
       />

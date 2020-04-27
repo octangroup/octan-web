@@ -1,5 +1,9 @@
 <template>
-  <div :data-aos="animation" :data-aos-duration="duration">
+  <div
+    :data-aos="animation"
+    :data-aos-duration="duration"
+    :data-aos-offset="offset"
+  >
     <img v-if="icon" :src="icon" />
     <div
       v-else
@@ -18,8 +22,12 @@ export default {
       default: 'fade-in-right'
     },
     duration: {
-      type: Number,
-      default: 500
+      type: String,
+      default: '500'
+    },
+    offset: {
+      type: String,
+      default: '0'
     },
     icon: {
       type: String,
