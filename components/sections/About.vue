@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary p-0 z-50 relative">
+  <div id="main-section" class="bg-primary p-0 z-50 relative">
     <div
       class="text-center xl:w-65 lg:w-65 md:w-75 xs:w-90 sm:w-90 py-12 mx-auto relative"
     >

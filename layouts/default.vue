@@ -34,16 +34,16 @@ export default {
           label: 'Home'
         },
         {
-          link: '/team',
-          label: 'Team'
-        },
-        {
           link: '/#services',
           label: 'What We Do'
         },
         {
           link: '/works',
           label: 'Works'
+        },
+        {
+          link: '/team',
+          label: 'Team'
         },
         {
           link: '/#contact-us',

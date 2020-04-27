@@ -1,8 +1,8 @@
 <template>
   <div ref="wrapper" class="relative z-50">
     <SectionWrapper id="services">
-      <div class="xl:flex lg:flex w-100 pb-60 mb-6">
-        <div class="w-45 md:w-70 xs:w-100 sm:w-80 xl:pr-4 lg:pr-4 mt-12">
+      <div class="xl:flex lg:flex w-100">
+        <div class="w-45 md:w-70 xs:w-100 sm:w-80 xl:pr-4 lg:pr-4">
           <SectionHeader title="What we do" class="w-100">
             We do our best to become our customers' solutions, remarkable
             services are offered to make customer relationship a priority
@@ -13,7 +13,7 @@
           class="w-55 md:w-80 sm:w-90 sm:mx-auto md:mx-auto sm:mt-12 md:mt-12 xs:w-100 xl:pl-4 lg:pl-4 overflow-hidden"
         >
           <div
-            class="flex w-90 xs:w-100 lg:w-100 xl:ml-auto xs:mx-auto flex-wrap"
+            class="flex w-90 xs:w-100 lg:w-100 xl:ml-auto xs:mx-auto flex-wrap my-4"
           >
             <ServiceCard
               v-for="(service, i) in services"
@@ -81,10 +81,28 @@ export default {
     window.removeEventListener('scroll', this.foo)
   },
   mounted() {
-    this.animation = this.$anime.timeline({ autoplay: false })
+    this.animation = this.$anime.timeline({
+      autoplay: false
+    })
     this.animation.add({
       targets: '.service-bubble-el',
-      translateY: 30,
+      keyframes: [
+        {
+          translateY: -20
+        },
+        {
+          translateY: -10
+        },
+        {
+          translateY: 0
+        },
+        {
+          translateY: 10
+        },
+        {
+          translateY: 20
+        }
+      ],
       easing: 'easeInOutSine'
     })
     this.clientHeight = this.$refs.wrapper.clientHeight

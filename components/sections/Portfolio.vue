@@ -1,8 +1,10 @@
 <template>
   <div class="bg-primary-darker relative">
     <div class="relative overflow-hidden xs:h-px-300">
-      <div class="absolute l-0 w-100 h-100 z-999">
-        <div class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 z-0" />
+      <div class="absolute l-0 w-100 h-100 z-999 py-12">
+        <div
+          class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 z-0 t-0"
+        />
         <div class="relative z-5 w-90 xl:w-85 mx-auto py-12">
           <a class="inherit-color no-underline">
             <SectionHeader title="Our works" class="w-100" dark>
@@ -13,6 +15,7 @@
         </div>
       </div>
       <MainSection :items="items" />
+      <SimplifiedSection :items="items" />
     </div>
   </div>
 </template>
@@ -20,12 +23,14 @@
 <script>
 import SectionHeader from '~/components/sections/partials/Header'
 import MainSection from '~/components/sections/partials/portfolio/Main'
+import SimplifiedSection from '~/components/sections/partials/portfolio/Simplified'
 
 export default {
   name: 'PartnersSection',
   components: {
     SectionHeader,
-    MainSection
+    MainSection,
+    SimplifiedSection
   },
   data() {
     return {

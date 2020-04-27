@@ -1,7 +1,7 @@
 <template
   ><div
     ref="wrapper"
-    class="py-12 z-50 p-0 relative overflow-hidden"
+    class="py-12 z-50 relative overflow-hidden"
     :style="brandStyle"
     :class="[
       project.textColor == 'white' ? 'text-white' : 'text-black',
@@ -9,7 +9,7 @@
     ]"
   >
     <div
-      class="mx-auto xl:py-12 md:w-100 sm:w-100 w-85 sm:py-6 xs:px-0  h-px-700  sm:h-auto xs:h-auto  xs:w-100"
+      class="mx-auto xl:py-12 md:w-100 sm:w-100 w-85 sm:py-6 xs:px-0  h-px-700 md:h-auto  sm:h-auto xs:h-auto  xs:w-100"
     >
       <div class="xl:flex lg:flex w-100  xs:mt-6">
         <div
@@ -38,7 +38,7 @@
             class="inherit-color no-underline"
           >
             <button
-              class="btn bg-white  rounded-sm shadow-lg my-6 sm:mb-0 text-black"
+              class="btn bg-white rounded-sm shadow-xl my-6 sm:mb-0 text-black"
             >
               Visit Site
               <span class="pl-3">
@@ -75,6 +75,35 @@
                       v-for="(picture, j) in subgroup"
                       :key="j"
                       :picture="picture"
+                    />
+                  </div>
+                </PortfolioGroup>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xl:hidden lg:hidden overflow-hidden sm:pb-12 md:pb-4">
+          <div
+            class="md:ml-12 md:pl-12 sm:ml-12 sm:pb-12 sm:-mt-12 md:pt-12  xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
+          >
+            <div
+              class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-content-between transform-3d bg-transparent z-0"
+            >
+              <div
+                class="relative flex flex-wrap flex-col justify-content-between bg-transparent transform-0-50-origin transform-3d align-content-stretch items-center justify-content-start z-0 transform-45deg-3d"
+              >
+                <PortfolioGroup v-for="(group, i) in list" :key="i">
+                  <div
+                    v-for="(subgroup, k) in group"
+                    :key="k"
+                    class="flex"
+                    :class="[k == 0 ? 'items-end' : 'items-center']"
+                  >
+                    <PortfolioCard
+                      v-for="(picture, j) in subgroup"
+                      :key="j"
+                      :picture="picture"
+                      mobile
                     />
                   </div>
                 </PortfolioGroup>
@@ -159,7 +188,6 @@ export default {
   methods: {
     scrollingListener() {
       const persentage = this.getScrollPercent()
-      console.log(persentage)
       this.animationFly.seek(this.animationFly.duration * (persentage * 0.01))
       this.animationShadow.seek(
         this.animationShadow.duration * (persentage * 0.01)

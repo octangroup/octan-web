@@ -2,7 +2,7 @@
 <template>
   <div
     ref="wrapper"
-    class="t-0 justify-center flex overflow-hidden  sticky z-50 max-w-100 w-100 ml-auto z-0 md:hidden sm:hidden xs:hidden relative"
+    class="t-0 justify-center xl:flex lg:flex overflow-hidden  sticky z-50 max-w-100 w-100 ml-auto z-0  hidden relative"
     style="height:120vh"
   >
     <div
@@ -13,7 +13,7 @@
             transform-style: preserve-3d;"
     >
       <div
-        class="flex justify-content-start items-center bg-transparent works-scroll-container"
+        class="flex justify-start items-center bg-transparent works-scroll-container"
         style="will-change: transform; transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
       >
         <PortfolioGroup v-for="(group, i) in list" :key="i">

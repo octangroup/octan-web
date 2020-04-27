@@ -15,7 +15,8 @@
       <div class="relative overflow-hidden p-0">
         <div class="curves-pattern-overlay z-0 p-0 m-0"></div>
         <div
-          class="curves-pattern relative z-10 p-0 m-0 border-none bg-white"
+          style="background-color: #f7f7f7"
+          class="curves-pattern relative z-10 p-0 m-0 border-none"
         ></div>
       </div>
     </div>
@@ -41,6 +42,7 @@ export default {
         {
           url: 'https://folkdays.com/',
           title: 'Folkdays',
+          brandColor: '#f7f7f7',
           description:
             'FOLKDAYS is a lifestyle brand for fair trade accessories. We sell products like jewellery, bags and scarves handmade by artisans from around the world.',
           category: 'Shop',
@@ -98,6 +100,7 @@ export default {
           description:
             'Betahills offers QA software testing services and works with a remote team of women in Rwanda!',
           category: 'Software Testing',
+          brandColor: '#f7f7f7',
           pictures: [
             {
               ...require('~/assets/img/portfolio/betahills/main.jpg'),
