@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-80 h-rem-58 lg:h-rem-64 md:h-rem-64 mt-10 lg:mt-6  md:w-100 mt-16 sm:w-100  md:mt-0 sm:mt-0  rounded-2xl   bg-white  shadow-lg relative  lg:l-1 xs:hidden"
+    class="w-80 h-rem-58 mt-10 lg:mt-6  md:w-100 mt-16 sm:w-100  md:mt-0 sm:mt-0  rounded-2xl   bg-white  shadow-lg relative  lg:l-1 xs:hidden"
   >
     <div class="absolute -mt-10  mx-auto  w-100 ">
       <div
@@ -28,7 +28,7 @@
       >
         <p
           :key="index"
-          class="w-80 mx-auto xs:my-3 sm:text-base text-xl xs:w-90 font-normal leading-normal"
+          class="w-80 mx-auto xs:my-3 xs:text-lg sm:text-lg md:text-lg text-xl xs:w-90 font-normal leading-normal"
           v-text="quotes[index].message"
         />
       </transition>
