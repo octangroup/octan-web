@@ -50,6 +50,7 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/anime.js',
+    '~/plugins/scrollTo.js',
     { src: '~/plugins/aos', ssr: false }
   ],
   /*
@@ -69,7 +70,8 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'nuxt-responsive-loader'
+    'nuxt-responsive-loader',
+    'vue-scrollto/nuxt'
   ],
   /*
    ** Axios module configuration

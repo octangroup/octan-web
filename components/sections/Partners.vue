@@ -17,7 +17,7 @@
             target="_blank"
             :title="partner.title"
             ><img
-              :src="partner.logo"
+              :srcset="partner.logo.srcSet"
               class="w-50 lg:w-60 md:w-70 sm:w-70 xs:w-80"
           /></a>
         </div>
@@ -41,47 +41,47 @@ export default {
         {
           title: 'Proto',
           link: 'https://www.proto.cx/',
-          logo: '/img/partners/proto.png'
+          logo: require('~/assets/img/partners/proto.png')
         },
         {
           title: 'Folkdays',
           link: 'https://folkdays.com/',
-          logo: '/img/partners/folkdays-logo.png'
+          logo: require('~/assets/img/partners/folkdays-logo.png')
         },
         {
           title: 'Code of Africa',
           link: 'https://www.codeofafrica.com/',
-          logo: '/img/partners/coa-logo.png'
+          logo: require('~/assets/img/partners/coa-logo.png')
         },
         {
           title: 'ALUSB',
           link: 'https://www.alusb.com/graduation/',
-          logo: '/img/partners/alusb-logo.png'
+          logo: require('~/assets/img/partners/alusb-logo.png')
         },
         {
           title: 'German Tech Network',
           link: 'https://techinrwanda.com',
-          logo: '/img/partners/techinrwanda-logo.png'
+          logo: require('~/assets/img/partners/techinrwanda-logo.png')
         },
         {
           title: 'betahills',
           link: 'http://betahills.com/',
-          logo: '/img/partners/betahills-logo.png'
+          logo: require('~/assets/img/partners/betahills-logo.png')
         },
         {
           title: 'Ape Unit',
           link: 'https://www.apeunit.com/',
-          logo: '/img/partners/ape-unit-logo.png'
+          logo: require('~/assets/img/partners/ape-unit-logo.png')
         },
         {
           title: 'Dacade',
           link: 'https://dacade.org',
-          logo: '/img/partners/dacade-logo.png'
+          logo: require('~/assets/img/partners/dacade-logo.png')
         },
         {
           title: 'Business Inventor',
           link: 'http://business-inventor.com/',
-          logo: '/img/partners/business-inventor-logo.png'
+          logo: require('~/assets/img/partners/business-inventor-logo.png')
         }
       ]
     }

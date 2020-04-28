@@ -24,6 +24,7 @@
           class="inline-block ml-5 text-sm font-medium cursor-pointer my-2"
         >
           <nuxt-link
+            v-scroll-to="{ el: item.link.hash ? '#' + item.link.hash : '#' }"
             :to="item.link"
             class="inherit-color no-underline cursor-pointer"
           >

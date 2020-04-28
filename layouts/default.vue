@@ -32,23 +32,23 @@ export default {
     return {
       navItems: [
         {
-          link: '/',
+          link: { path: '/' },
           label: 'Home'
         },
         {
-          link: '/#services',
+          link: { path: '/', hash: 'services' },
           label: 'What We Do'
         },
         {
-          link: '/works',
+          link: { path: '/works' },
           label: 'Works'
         },
         {
-          link: '/team',
+          link: { path: '/team' },
           label: 'Team'
         },
         {
-          link: '/#contact-us',
+          link: { path: '/', hash: 'contact-us' },
           label: 'Contact Us',
           button: true
         }

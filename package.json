@@ -35,7 +35,8 @@
     "nuxt": "^2.0.0",
     "nuxt-responsive-loader": "^2.0.1",
     "og-css": "^3.0.3",
-    "vue-animejs": "^2.1.1"
+    "vue-animejs": "^2.1.1",
+    "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

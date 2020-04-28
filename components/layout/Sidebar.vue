@@ -19,6 +19,7 @@
           @click="toggleSidebar"
         >
           <nuxt-link
+            v-scroll-to="{ el: item.link.hash ? '#' + item.link.hash : null }"
             :to="item.link"
             class="inherit-color font-light no-underline"
           >
