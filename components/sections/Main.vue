@@ -32,7 +32,7 @@
           <div class=" mt-3 w-100 sm:mt-2 xs:mt-2">
             <a href="#main-section">
               <button
-                class="btn btn-outline-accent text-accent hover:text-primary focus:text-primary border-2 hover:bg-accent focus:bg-accent transition-250ms rounded-full "
+                class="btn btn-outline-accent text-base font-medium text-accent hover:text-primary focus:text-primary border-2 hover:bg-accent focus:bg-accent transition-250ms rounded-full "
               >
                 Learn More
               </button>

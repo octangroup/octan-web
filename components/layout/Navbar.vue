@@ -38,7 +38,7 @@
                   ? 'btn-outline-primary text-primary hover:text-white focus:text-white'
                   : 'btn-outline-white text-white hover:bg-white hover:text-primary'
               ]"
-              class="btn transition-250ms rounded-full border-1 mx-0"
+              class="btn text-sm font-medium transition-250ms rounded-full border-1 mx-0"
             >
               {{ item.label }}
             </button>
