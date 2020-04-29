@@ -11,10 +11,10 @@
       <p
         class="text-xl xs:text-lg  sm:text-lg mt-6 mb-12 leading-normal opacity-95 text-white"
       >
-        We're skilled to provide Maximum Quality in Minimum Timeframe. How isn't
-        a question!<br />
+        We're skilled to provide Maximum Quality in Minimum Time Frame. How
+        isn't a question!<br />
         We're Technically passionate as a Company, widening the skillsets and
-        minimising the process, learn more during the Development Journey and
+        minimizing the process, learn more during the Development Journey and
         charge for worth not just efforts!
       </p>
     </div>

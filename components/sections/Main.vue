@@ -21,7 +21,7 @@
           <h1
             class="xl:text-4xl  xl:w-65 lg:w-80 sm:w-90 sm:mt-6 md:w-80 lg:text-3xl md:mt-6 mt-3 xs:mt-6 xxs:mt-6 text-accent mb-2 font-primary sm:text-2xl xs:text-2xl md:text-2xl"
           >
-            CREATIVITY, QUALITY AND RELIABILITY
+            CREATIVITY, QUALITY, AND RELIABILITY
           </h1>
           <p
             class="text-white xs:mx-auto xl:w-70 lg:w-80 lg:my-6 md:my-6 my-12 sm:my-6 xs:my-8 leading-normal md:w-70 text-xl xs:text-lg sm:text-lg md:text-lg xs:mt-12"
