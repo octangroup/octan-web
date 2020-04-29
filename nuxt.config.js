@@ -75,13 +75,6 @@ export default {
     'vue-scrollto/nuxt'
   ],
   /*
-   ** Purgecss module configuration
-   ** See https://purgecss.com/configuration.html#configuration-file
-   */
-  purgeCSS: {
-    whitelist: () => ['svg-inline--fa', 'fa-w-16']
-  },
-  /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
