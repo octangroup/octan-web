@@ -5,7 +5,7 @@
         <div class="w-45 md:w-70 xs:w-100 sm:w-80 xl:pr-4 lg:pr-4">
           <SectionHeader title="What we do" class="w-100">
             We do our best to become our customers' solutions, remarkable
-            services are offered to make customer relationship a priority
+            services are offered to make customer relationships a priority.
           </SectionHeader>
         </div>
 

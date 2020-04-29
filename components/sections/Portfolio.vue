@@ -12,7 +12,7 @@
             <a class="inherit-color no-underline">
               <SectionHeader title="Our works" class="w-100" dark>
                 We enjoy getting experience while doing what we love, <br />
-                looking forward to building memorable experiences with you
+                looking forward to building memorable experiences with you.
               </SectionHeader>
             </a>
           </div>
