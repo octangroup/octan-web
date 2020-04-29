@@ -5,13 +5,13 @@
         <h1
           class="text-accent font-primary my-12 lg:text-3xl sm:text-2xl xs:text-2xl md:text-2xl text-4xl"
         >
-          Let's Build A Great Future Together.
+          Let's Build A Great Future Together
         </h1>
         <p
           class="my-0 text-white xl:text-xl lg:text-lg text-base leading-normal"
         >
           We brought together smart, talented thinkers and unleashed their
-          combined creativity on the world
+          combined creativity on the world.
         </p>
       </div>
       <div class="relative overflow-hidden p-0">
