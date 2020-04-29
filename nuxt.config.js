@@ -72,8 +72,16 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'nuxt-responsive-loader',
-    'vue-scrollto/nuxt'
+    'vue-scrollto/nuxt',
+    'nuxt-purgecss'
   ],
+  /*
+   ** Purgecss module configuration
+   ** See https://purgecss.com/configuration.html#configuration-file
+   */
+  purgeCSS: {
+    whitelist: () => ['svg-inline--fa', 'fa-w-16']
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
