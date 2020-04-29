@@ -72,8 +72,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'nuxt-responsive-loader',
-    'vue-scrollto/nuxt',
-    'nuxt-purgecss'
+    'vue-scrollto/nuxt'
   ],
   /*
    ** Purgecss module configuration
