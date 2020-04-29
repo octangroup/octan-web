@@ -90,6 +90,6 @@ export default {
   },
 
   purgeCSS: {
-    styleExtensions: ['.scss']
+    css: ['~/styles/app.scss']
   }
 }
