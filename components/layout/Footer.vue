@@ -11,7 +11,7 @@ export default {
   name: 'Footer',
   computed: {
     year() {
-      return '2020'
+      return new Date().getFullYear()
     }
   }
 }
