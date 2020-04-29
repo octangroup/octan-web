@@ -41,37 +41,37 @@ export default {
       members: [
         {
           avatar: require('~/assets/img/team/arsy.jpg'),
-          names: 'Mr Arsene J. Karema',
+          names: 'Arsene J. Karema',
           position: 'UI & Graphic'
         },
         {
           avatar: require('~/assets/img/team/yannick.jpg'),
-          names: 'Mr Yannick Musafiri',
+          names: 'Yannick Musafiri',
           position: 'Back-End & UI'
         },
         {
           avatar: require('~/assets/img/team/lewis.jpg'),
-          names: 'Mr Lewis Nkuranga',
+          names: 'Lewis Nkuranga',
           position: 'Back-End'
         },
         {
           avatar: require('~/assets/img/team/promesse.jpg'),
-          names: 'Mr Promesse D. Ishimwe',
+          names: 'Promesse D. Ishimwe',
           position: 'Back-End'
         },
         {
           avatar: require('~/assets/img/team/herve.jpg'),
-          names: 'Mr Herve Ngenzi',
+          names: 'Herve Ngenzi',
           position: 'Back-End'
         },
         {
           avatar: require('~/assets/img/team/bobo.jpg'),
-          names: 'Mr Landry Gahizi',
+          names: 'Landry Gahizi',
           position: 'UI, UX & Graphic'
         },
         {
           avatar: require('~/assets/img/team/derrick.jpg'),
-          names: 'Mr Derrick Murengezi',
+          names: 'Derrick Murengezi',
           position: 'Sales'
         }
       ]
