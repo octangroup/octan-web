@@ -16,15 +16,14 @@
           v-for="(item, i) in items"
           :key="i"
           class="my-4 text-lg  cursor-pointer"
-          @click="toggleSidebar"
         >
           <nuxt-link
             v-scroll-to="{ el: item.link.hash ? '#' + item.link.hash : null }"
             :to="item.link"
             class="inherit-color font-light no-underline"
           >
-            {{ item.label }}</nuxt-link
-          >
+            <span @click="toggleSidebar">{{ item.label }}</span>
+          </nuxt-link>
         </li>
       </ul>
     </div>
