@@ -1,6 +1,8 @@
 <template>
   <div class="bg-primary-darker relative">
-    <div class="relative overflow-hidden xs:min-h-px-500">
+    <div
+      class="relative overflow-hidden xs:min-h-px-500 md:min-h-px-400 sm:min-h-px-400"
+    >
       <div class="absolute l-0 w-100 h-100 z-999 py-12">
         <div
           class="absolute w-50 xs:w-70 h-100 bg-primary opacity-60 xs:opacity-70 z-0 t-0"

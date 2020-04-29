@@ -5,7 +5,6 @@
   >
     <img
       :srcset="picture.srcSet"
-      sizes="(max-width: 991px) 100vw, 24vw"
       :class="{ 'works-movable-item': !picture.portait && !mobile }"
       class="h-auto relative z-999 block transform-3d translate-3d-0-0-9"
       style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"

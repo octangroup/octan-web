@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:hidden lg:hidden md:hidden  overflow-hidden">
+  <div class="hidden xs:block  overflow-hidden">
     <div class="xl:flex lg:flex w-100 pt-12">
       <ProcessCard
         class="w-100 text-center"

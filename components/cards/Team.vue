@@ -8,7 +8,7 @@
       <img :srcset="member.avatar.srcSet" class="clip-full" />
     </div>
     <div class="px-3 py-2">
-      <h5 class="my-2 font-primary">{{ member.names }}</h5>
+      <h5 class="my-2 font-primary text-black">{{ member.names }}</h5>
       <p class="font-medium">{{ member.position }}</p>
     </div>
   </div>

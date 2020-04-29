@@ -23,7 +23,9 @@
           >
             {{ project.category }}</span
           >
-          <h2 class=" xs:text-xl font-primary">
+          <h2
+            class="text-3xl sm:text-xl  md:text-xl xs:text-xl font-primary my-8"
+          >
             {{ project.title }}
           </h2>
           <p
@@ -62,7 +64,7 @@
             >
               <div
                 :class="['project-section-' + index]"
-                class="flex justify-content-start items-center bg-transparent"
+                class="flex justify-start items-center bg-transparent"
               >
                 <PortfolioGroup v-for="(group, i) in list" :key="i">
                   <div
@@ -82,15 +84,15 @@
             </div>
           </div>
         </div>
-        <div class="xl:hidden lg:hidden overflow-hidden sm:pb-12 md:pb-4">
+        <div class="xl:hidden lg:hidden overflow-hidden sm:pb-0 md:pb-4">
           <div
-            class="md:ml-12 md:pl-12 sm:ml-12 sm:pb-12 sm:-mt-12 md:pt-12  xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
+            class="md:ml-12 md:pl-12 sm:ml-12 sm:pl-16  sm:pb-12 sm:mt-6 md:pt-12  xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
           >
             <div
-              class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-content-between transform-3d bg-transparent z-0"
+              class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-between transform-3d bg-transparent z-0"
             >
               <div
-                class="relative flex flex-wrap flex-col justify-content-between bg-transparent transform-0-50-origin transform-3d align-content-stretch items-center justify-content-start z-0 transform-45deg-3d"
+                class="relative flex flex-wrap flex-col md:w-50 sm:w-60 md:ml-auto sm:mx-auto sm:items-start md:items-start bg-transparent transform-0-50-origin transform-3d  justify-start z-0 transform-45deg-3d sm:pt-6"
               >
                 <PortfolioGroup v-for="(group, i) in list" :key="i">
                   <div

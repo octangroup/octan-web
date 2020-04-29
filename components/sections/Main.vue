@@ -7,7 +7,7 @@
       <MainShape />
     </div>
     <div
-      class="absolute  -t-5 w-100 sm:w-75 md xl:hidden md:w-70 md:-t-10 lg:w-85 -r-10"
+      class="absolute -t-5 w-100 sm:w-75 md xl:hidden md:w-70 md:-t-25 md:-r-5 lg:w-85 -r-10"
     >
       <MainShape class="lg:-mt-10 sm:-mt-20 xs:-mt-5" />
     </div>

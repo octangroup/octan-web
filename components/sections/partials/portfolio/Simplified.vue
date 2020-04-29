@@ -6,7 +6,7 @@
       class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-between transform-3d bg-transparent z-0"
     >
       <div
-        class="relative flex flex-wrap flex-col justify-between bg-transparent transform-0-50-origin transform-3d align-stretch items-center justify-start z-0 transform-45deg-3d"
+        class="relative flex md:w-80 sm:w-80 md:ml-auto sm:ml-auto flex-wrap flex-col justify-between bg-transparent transform-0-50-origin transform-3d items-stretch items-center justify-start z-0 transform-45deg-3d"
       >
         <PortfolioGroup>
           <div

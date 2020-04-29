@@ -1,7 +1,7 @@
 <template>
   <div class="w-50 md:w-70 xs:w-100 sm:w-80 xl:pr-4 lg:pr-4 relative">
     <h2
-      :class="[dark ? 'text-accent' : 'text-dark']"
+      :class="[dark ? 'text-accent' : 'text-black']"
       class="text-3xl sm:text-xl  md:text-xl xs:text-xl font-bold font-primary mt-0 mb-3"
     >
       {{ title }}
