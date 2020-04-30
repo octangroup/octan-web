@@ -12,7 +12,9 @@
         <div
           class="w-55 md:w-80 sm:w-90 sm:mx-auto md:mx-auto sm:mt-12 md:mt-12 xs:w-100 xl:pl-4 lg:pl-4 overflow-hidden"
         >
-          <div class="flex w-90 xs:w-100 lg:w-100 mx-auto flex-wrap my-4">
+          <div
+            class="flex w-90 xs:w-100 lg:w-100 mx-auto xl:mr-0 lg:mr-0 flex-wrap my-4"
+          >
             <ServiceCard
               v-for="(service, i) in services"
               :key="i"
