@@ -20,7 +20,7 @@
           <div
             v-for="(subgroup, k) in group"
             :key="k"
-            class="flex"
+            class="flex relative"
             :class="[k == 0 ? 'items-end' : 'items-center']"
           >
             <PortfolioCard
