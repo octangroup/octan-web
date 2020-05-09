@@ -27,7 +27,7 @@
               target="_blank"
               href="mailto:info@octangrp.com"
               ><i class="fi flaticon-mail mr-2"></i>
-              info@octangrp.com
+              hello@octangrp.com
             </a>
           </h4>
           <h4
