@@ -19,6 +19,11 @@ export default {
         name: 'keywords',
         content:
           'software developers in rwanda, software developers, websites in rwanda, octan group, octan grp, Octan ltd, octan limited, mobile application in rwanda, mobile application development, web development in rwanda, web development, app development in rwanda, IT in rwanda, websites, app development, mobile development, ios development, android development, windows software development, ios development in rwanda, android development in rwanda, windows software development in rwanda, octan rwanda, octan grp rwanda, octan group rwanda, tech, technology, company, rwanda, rails, ruby, vue js, vue.js, php, laravel, lumen, shopify, wordpress, iot, javascript, kotlin, java, react native, blockchain, bpo, outsourcing, RasperryPi, rasperry pi, software testing, smart contracts, advertising, communication design, concept, corporate design,  corporate identity,  crypto,  digital,  digital design,  editorial design, exhibition design, graphic design, interaction design, new media, screen design, type design, typography, visual communication, web design, web development, freelancers, developers'
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#01263F'
       }
     ],
     link: [
