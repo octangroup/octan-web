@@ -53,7 +53,7 @@
     "jest": "^24.1.0",
     "lint-staged": "^10.2.9",
     "prettier": "^1.19.1",
-    "sass": "^1.26.5",
+    "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "stylelint": "^10.1.0",
     "vue-jest": "^4.0.0-0"
