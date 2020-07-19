@@ -187,6 +187,18 @@ export default {
         }
       ]
     }
+  },
+  head: {
+    title: 'Octan Group | Works',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'All our projects have one thing in common: Whatever should be communicated, we use the most suitable channels to convey your message holistically and to put your brand or your product in the perfect light.'
+      }
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }]
   }
 }
 </script>

@@ -76,6 +76,18 @@ export default {
         }
       ]
     }
+  },
+  head: {
+    title: 'Octan Group | Team',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'We brought together smart, talented thinkers and unleashed their combined creativity on the world.'
+      }
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }]
   }
 }
 </script>
