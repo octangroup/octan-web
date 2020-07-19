@@ -25,9 +25,9 @@
             <a
               class="inherit-color no-underline"
               target="_blank"
-              href="mailto:info@octangrp.com"
+              href="mailto:hello@octan.group"
               ><i class="fi flaticon-mail mr-2"></i>
-              hello@octangrp.com
+              hello@octan.group
             </a>
           </h4>
           <h4
