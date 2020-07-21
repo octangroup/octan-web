@@ -124,7 +124,7 @@ export default {
           rowChunks: 2
         },
         {
-          url: 'http://furahapublishers.com/',
+          url: 'http://furahapublisher.com/',
           title: 'Furaha Publishers',
           description:
             'Furaha Publishers is a children’s book publishing house registered as a company from September 2014 by Dr. Christine Warugaba. ',
