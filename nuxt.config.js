@@ -6,8 +6,13 @@ export default {
   head: {
     title: 'Octan Group - Software Engineering',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
       {
         hid: 'description',
         name: 'description',
@@ -27,7 +32,11 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
       {
         rel: 'stylesheet',
         href:
@@ -38,7 +47,9 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#fff'
+  },
   /*
    ** Global CSS
    */
@@ -56,7 +67,10 @@ export default {
     '~/plugins/fontawesome.js',
     '~/plugins/anime.js',
     '~/plugins/scrollTo.js',
-    { src: '~/plugins/aos', ssr: false }
+    {
+      src: '~/plugins/aos',
+      ssr: false
+    }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -105,8 +119,16 @@ export default {
     gzip: true,
     defaults: {
       changefreq: 'monthly',
-      priority: 1,
+      priority: 0.5,
       lastmod: new Date()
-    }
+    },
+    routes: [
+      {
+        url: '/',
+        priority: 1
+      },
+      '/team',
+      '/works'
+    ]
   }
 }
