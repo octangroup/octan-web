@@ -113,7 +113,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    publicPath: 'http://34.120.195.40/client'
+    publicPath: 'https://cdn.octan.group/client'
   },
   sitemap: {
     hostname: 'https://octan.group',
