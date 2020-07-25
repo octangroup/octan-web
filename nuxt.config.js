@@ -48,7 +48,8 @@ export default {
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#fff'
+    color: '#58dcd0',
+    height: '5px'
   },
   /*
    ** Global CSS
@@ -112,7 +113,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    publicPath: 'http://34.120.195.40/client'
   },
   sitemap: {
     hostname: 'https://octan.group',
