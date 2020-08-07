@@ -26,7 +26,7 @@ export default {
     ProcessSection,
     PartnersSection,
     ContactSection,
-    PortfolioSection
+    PortfolioSection,
   },
   mounted() {
     this.$store.dispatch('navbar/setTransparentBackground', true)
@@ -35,7 +35,7 @@ export default {
   beforeDestroy() {
     this.$store.dispatch('navbar/setTransparentBackground', false)
     this.$store.dispatch('navbar/setFixedPosition', true)
-  }
+  },
 }
 </script>
 

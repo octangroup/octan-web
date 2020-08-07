@@ -43,7 +43,7 @@ export default {
   components: {
     ServiceCard,
     SectionHeader,
-    SectionWrapper
+    SectionWrapper,
   },
   data() {
     return {
@@ -51,32 +51,32 @@ export default {
         {
           title: 'Web Development',
           icon: '/icons/services/sketch.svg',
-          bottomRight: true
+          bottomRight: true,
         },
         {
           title: 'Mobile App Development',
           icon: '/icons/services/application.svg',
-          bottomLeft: true
+          bottomLeft: true,
         },
         {
           title: 'Graphic Design & Branding',
           icon: '/icons/services/graphic.svg',
-          topRight: true
+          topRight: true,
         },
         {
           title: 'Search Engine Optimization (SEO)',
           icon: '/icons/services/seo.svg',
-          topLeft: true
-        }
+          topLeft: true,
+        },
       ],
       animation: '',
-      clientHeight: 0
+      clientHeight: 0,
     }
   },
   computed: {
     ...mapState({
-      isMobile: (state) => state.window.isMobile
-    })
+      isMobile: (state) => state.window.isMobile,
+    }),
   },
   created() {
     if (process.client) {
@@ -89,28 +89,28 @@ export default {
   },
   mounted() {
     this.animation = this.$anime.timeline({
-      autoplay: false
+      autoplay: false,
     })
     this.animation.add({
       targets: '.service-bubble-el',
       keyframes: [
         {
-          translateY: -20
+          translateY: -20,
         },
         {
-          translateY: -10
+          translateY: -10,
         },
         {
-          translateY: 0
+          translateY: 0,
         },
         {
-          translateY: 10
+          translateY: 10,
         },
         {
-          translateY: 20
-        }
+          translateY: 20,
+        },
       ],
-      easing: 'easeInOutSine'
+      easing: 'easeInOutSine',
     })
     this.clientHeight = this.$refs.wrapper.clientHeight
   },
@@ -128,7 +128,7 @@ export default {
         return 100 - (top * 100) / this.clientHeight
       }
       return 0
-    }
-  }
+    },
+  },
 }
 </script>

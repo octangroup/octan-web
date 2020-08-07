@@ -2,7 +2,7 @@
   <div class="static bg-grey-lightest h-100 min-h-screen">
     <div class="xl:block lg:block flex relative h-100 w-100">
       <div
-        class="w-100 relative  overflow-x-hidden transition-500ms xl:mx-0 lg:mx-0"
+        class="w-100 relative overflow-x-hidden transition-500ms xl:mx-0 lg:mx-0"
         :class="{ '-ml-70%-temp': showSidebar }"
       >
         <Navbar :items="navItems" />
@@ -26,39 +26,39 @@ export default {
   components: {
     Footer,
     Navbar,
-    Sidebar
+    Sidebar,
   },
   data() {
     return {
       navItems: [
         {
           link: { path: '/' },
-          label: 'Home'
+          label: 'Home',
         },
         {
           link: { path: '/', hash: 'services' },
-          label: 'What We Do'
+          label: 'What We Do',
         },
         {
           link: { path: '/works' },
-          label: 'Works'
+          label: 'Works',
         },
         {
           link: { path: '/team' },
-          label: 'Team'
+          label: 'Team',
         },
         {
           link: { path: '/', hash: 'contact-us' },
           label: 'Contact Us',
-          button: true
-        }
-      ]
+          button: true,
+        },
+      ],
     }
   },
   computed: {
     ...mapState({
-      showSidebar: (state) => state.navbar.showSidebar
-    })
+      showSidebar: (state) => state.navbar.showSidebar,
+    }),
   },
   created() {
     if (process.client) {
@@ -78,7 +78,7 @@ export default {
       if (this.showSidebar) {
         this.$store.dispatch('navbar/toggleSidebar', false)
       }
-    }
-  }
+    },
+  },
 }
 </script>

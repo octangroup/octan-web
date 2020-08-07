@@ -15,7 +15,7 @@
       style="will-change: opacity, transform; opacity: 0.6;"
       :class="{
         'works-movable-item-shadow': !picture.portait && !mobile,
-        'works-fixed-item-shadow': picture.portait && !mobile
+        'works-fixed-item-shadow': picture.portait && !mobile,
       }"
     />
   </div>
@@ -29,14 +29,14 @@ export default {
       default: () => {
         return {
           url: '',
-          portait: false
+          portait: false,
         }
-      }
+      },
     },
     mobile: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 }
 </script>

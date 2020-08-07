@@ -7,48 +7,48 @@ export default {
     title: 'Octan Group - Software Engineering',
     meta: [
       {
-        charset: 'utf-8'
+        charset: 'utf-8',
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Octan Group is a full-stack software development company based in Rwanda. The team primarily works for clients in Europe and North America and has experience in the fashion, travel, education, healthcare and financial services industries. Octan also plays an active role in shaping the Rwandan tech scene by spearheading peer-mentoring efforts and community-driven open source projects.'
+          'Octan Group is a full-stack software development company based in Rwanda. The team primarily works for clients in Europe and North America and has experience in the fashion, travel, education, healthcare and financial services industries. Octan also plays an active role in shaping the Rwandan tech scene by spearheading peer-mentoring efforts and community-driven open source projects.',
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'software developers in rwanda, software developers, websites in rwanda, octan group, octan grp, Octan ltd, octan limited, mobile application in rwanda, mobile application development, web development in rwanda, web development, app development in rwanda, IT in rwanda, websites, app development, mobile development, ios development, android development, windows software development, ios development in rwanda, android development in rwanda, windows software development in rwanda, octan rwanda, octan grp rwanda, octan group rwanda, tech, technology, company, rwanda, rails, ruby, vue js, vue.js, php, laravel, lumen, shopify, wordpress, iot, javascript, kotlin, java, react native, blockchain, bpo, outsourcing, RasperryPi, rasperry pi, software testing, smart contracts, advertising, communication design, concept, corporate design,  corporate identity,  crypto,  digital,  digital design,  editorial design, exhibition design, graphic design, interaction design, new media, screen design, type design, typography, visual communication, web design, web development, freelancers, developers'
+          'software developers in rwanda, software developers, websites in rwanda, octan group, octan grp, Octan ltd, octan limited, mobile application in rwanda, mobile application development, web development in rwanda, web development, app development in rwanda, IT in rwanda, websites, app development, mobile development, ios development, android development, windows software development, ios development in rwanda, android development in rwanda, windows software development in rwanda, octan rwanda, octan grp rwanda, octan group rwanda, tech, technology, company, rwanda, rails, ruby, vue js, vue.js, php, laravel, lumen, shopify, wordpress, iot, javascript, kotlin, java, react native, blockchain, bpo, outsourcing, RasperryPi, rasperry pi, software testing, smart contracts, advertising, communication design, concept, corporate design,  corporate identity,  crypto,  digital,  digital design,  editorial design, exhibition design, graphic design, interaction design, new media, screen design, type design, typography, visual communication, web design, web development, freelancers, developers',
       },
       {
         hid: 'theme-color',
         name: 'theme-color',
-        content: '#01263F'
-      }
+        content: '#01263F',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: '/favicon.ico',
       },
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600&display=swap'
-      }
-    ]
+          'https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600&display=swap',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#fff'
+    color: '#fff',
   },
   /*
    ** Global CSS
@@ -58,7 +58,7 @@ export default {
     '@fortawesome/fontawesome-svg-core/styles.css',
     'animate.css/animate.css',
     '~/static/assets/fonts/_flaticon.css',
-    '~/static/assets/fonts/flaticonV2/flaticon.css'
+    '~/static/assets/fonts/flaticonV2/flaticon.css',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -69,8 +69,8 @@ export default {
     '~/plugins/scrollTo.js',
     {
       src: '~/plugins/aos',
-      ssr: false
-    }
+      ssr: false,
+    },
   ],
   /*
    ** Nuxt.js dev-modules
@@ -84,9 +84,9 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-170299741-1'
-      }
-    ]
+        id: 'UA-170299741-1',
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -98,7 +98,8 @@ export default {
     '@nuxtjs/dotenv',
     'nuxt-responsive-loader',
     'vue-scrollto/nuxt',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
   /*
    ** Axios module configuration
@@ -112,10 +113,8 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extractCSS: {
-      allChunks: true
-    },
-    extend(config, ctx) {}
+    extractCSS: true,
+    extend(config, ctx) {},
   },
   sitemap: {
     hostname: 'https://octan.group',
@@ -123,15 +122,21 @@ export default {
     defaults: {
       changefreq: 'monthly',
       priority: 0.5,
-      lastmod: new Date()
+      lastmod: new Date(),
     },
     routes: [
       {
         url: '/',
-        priority: 1
+        priority: 1,
       },
       '/team',
-      '/works'
-    ]
-  }
+      '/works',
+    ],
+  },
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: 'https://octan.group/sitemap.xml',
+    Disallow: false,
+  },
 }

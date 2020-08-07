@@ -2,7 +2,7 @@
   <nav
     :class="[
       transparent ? 'bg-transparent text-primary' : 'bg-primary text-white',
-      fixed && !showSidebar ? 'fixed' : 'absolute'
+      fixed && !showSidebar ? 'fixed' : 'absolute',
     ]"
     class="z-9999 transition-500ms w-100 m-0 t-0 l-0 r-0"
   >
@@ -15,7 +15,7 @@
         </li>
       </ul>
       <ul
-        class="list text-right w-50 lg:w-60  ml-auto my-2 hidden xl:block lg:block px-0 mr-0  text-sm"
+        class="list text-right w-50 lg:w-60 ml-auto my-2 hidden xl:block lg:block px-0 mr-0 text-sm"
       >
         <li
           v-for="(item, i) in items"
@@ -28,6 +28,7 @@
             :to="item.link"
             class="inherit-color no-underline cursor-pointer"
             :title="item.label"
+            :rel="i != 0 && !item.link.hash ? 'canonical' : null"
           >
             <span v-if="!item.button">
               {{ item.label }}
@@ -37,7 +38,7 @@
               :class="[
                 transparent
                   ? 'btn-outline-primary text-primary hover:text-white focus:text-white'
-                  : 'btn-outline-white text-white hover:bg-white hover:text-primary'
+                  : 'btn-outline-white text-white hover:bg-white hover:text-primary',
               ]"
               class="btn text-sm font-medium transition-250ms rounded-full border-1 mx-0"
             >
@@ -57,7 +58,7 @@
           >
             <div
               :class="[transparent ? 'border-primary' : 'border-white']"
-              class="border-1 w-rem-8 "
+              class="border-1 w-rem-8"
             ></div>
             <div
               :class="[transparent ? 'border-primary' : 'border-white']"
@@ -65,7 +66,7 @@
             ></div>
             <div
               :class="[transparent ? 'border-primary' : 'border-white']"
-              class="border-1 w-rem-8 "
+              class="border-1 w-rem-8"
             ></div>
           </button>
         </li>
@@ -81,32 +82,32 @@ import Logo from '~/components/Logo.vue'
 export default {
   name: 'Navbar',
   components: {
-    Logo
+    Logo,
   },
   props: {
     items: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
       fixed: false,
-      transparent: true
+      transparent: true,
     }
   },
   computed: {
     ...mapState({
-      showSidebar: (state) => state.navbar.showSidebar
-    })
+      showSidebar: (state) => state.navbar.showSidebar,
+    }),
   },
   watch: {
     $route: {
       immediate: true,
       handler(to, from) {
         this.checkRoute(to.path)
-      }
-    }
+      },
+    },
   },
   created() {
     this.checkRoute(this.$route.path)
@@ -123,7 +124,7 @@ export default {
       }
       this.fixed = true
       this.transparent = false
-    }
-  }
+    },
+  },
 }
 </script>

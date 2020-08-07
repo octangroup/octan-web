@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 relative xs:hidden">
-    <div class="xl:flex lg:flex sm:flex md:flex w-100 pt-16 ">
+    <div class="xl:flex lg:flex sm:flex md:flex w-100 pt-16">
       <ProcessCard
         class="w-30"
         :index="1"
@@ -20,14 +20,14 @@
       />
     </div>
     <ProcessArrow
-      class="w-10 float-right xl:pt-16 ml-auto xl:mr-6 "
+      class="w-10 float-right xl:pt-16 ml-auto xl:mr-6"
       icon="/icons/process/arrow-2.svg"
       offset="100"
       animation="fade-left"
     />
-    <div class="xl:flex md:flex lg:flex sm:flex pt-16 ">
+    <div class="xl:flex md:flex lg:flex sm:flex pt-16">
       <ProcessArrow
-        class="w-50 px-12 sm:pr-3 lg:px-2  md:pt-5 md:px-8 mt-12"
+        class="w-50 px-12 sm:pr-3 lg:px-2 md:pt-5 md:px-8 mt-12"
         icon="/icons/process/arrow-3.svg"
         offset="400"
         duration="800"
@@ -41,13 +41,13 @@
       />
     </div>
     <ProcessCard
-      class="w-45  pr-12 xl:mr-4"
+      class="w-45 pr-12 xl:mr-4"
       :index="4"
       :title="items[3].title"
       :description="items[3].description"
     />
-    <div class="w-100 ">
-      <div class="w-100 ml-auto  ">
+    <div class="w-100">
+      <div class="w-100 ml-auto">
         <ProcessArrow
           class="w-10 lg:w-15 md:w-15 mx-auto -mt-20 mb-12 md:mb-8"
           icon="/icons/process/arrow-4.svg"
@@ -73,13 +73,13 @@ export default {
   name: 'ProcessExpanded',
   components: {
     ProcessCard,
-    ProcessArrow
+    ProcessArrow,
   },
   props: {
     items: {
       type: Array,
-      default: () => []
-    }
-  }
+      default: () => [],
+    },
+  },
 }
 </script>

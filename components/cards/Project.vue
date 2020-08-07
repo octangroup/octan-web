@@ -5,31 +5,31 @@
     :style="brandStyle"
     :class="[
       project.textColor == 'white' ? 'text-white' : 'text-black',
-      !project.brandColor ? 'bg-white' : null
+      !project.brandColor ? 'bg-white' : null,
     ]"
   >
     <div
-      class="mx-auto xl:py-12 md:w-100 sm:w-100 w-85 sm:py-6 xs:px-0  h-px-700 md:h-auto  sm:h-auto xs:h-auto  xs:w-100"
+      class="mx-auto xl:py-12 md:w-100 sm:w-100 w-85 sm:py-6 xs:px-0 h-px-700 md:h-auto sm:h-auto xs:h-auto xs:w-100"
     >
-      <div class="xl:flex lg:flex w-100  xs:mt-6">
+      <div class="xl:flex lg:flex w-100 xs:mt-6">
         <div
           class="w-40 md:w-85 sm:w-85 md:85 xs:w-85 md:mx-auto sm:mx-auto xs:mx-auto xs:text-center xl:pt-12 xs:pt-12 sm:pt-2"
         >
           <span
             :class="[
-              project.textColor == 'white' ? 'border-white' : 'border-black'
+              project.textColor == 'white' ? 'border-white' : 'border-black',
             ]"
-            class="text-xs p-2  text-center  xs:mx-auto rounded-sm border-1 border-solid  font-primary"
+            class="text-xs p-2 text-center xs:mx-auto rounded-sm border-1 border-solid font-primary"
           >
             {{ project.category }}</span
           >
           <h2
-            class="text-3xl sm:text-xl  md:text-xl xs:text-xl font-primary my-8"
+            class="text-3xl sm:text-xl md:text-xl xs:text-xl font-primary my-8"
           >
             {{ project.title }}
           </h2>
           <p
-            class="xl:w-80  xs:text-sm  xl:text-lg lg:text-lg leading-normal opacity-95"
+            class="xl:w-80 xs:text-sm xl:text-lg lg:text-lg leading-normal opacity-95"
           >
             {{ project.description }}
           </p>
@@ -56,11 +56,13 @@
             class="-mt-32 h-screen justify-center flex sticky z-50 max-w-100 w-100 ml-auto z-0 md:hidden sm:hidden xs:hidden relative"
           >
             <div
-              class="relative flex w-screen h-screen justify-center w-100 "
-              style="-webkit-transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
-            transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;"
+              class="relative flex w-screen h-screen justify-center w-100"
+              style="
+                -webkit-transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
+                transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+              "
             >
               <div
                 :class="['project-section-' + index]"
@@ -86,13 +88,13 @@
         </div>
         <div class="xl:hidden lg:hidden overflow-hidden sm:pb-0 md:pb-4">
           <div
-            class="md:ml-12 md:pl-12 sm:ml-12 sm:pl-16  sm:pb-12 sm:mt-6 md:pt-12  xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
+            class="md:ml-12 md:pl-12 sm:ml-12 sm:pl-16 sm:pb-12 sm:mt-6 md:pt-12 xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
           >
             <div
               class="relative block w-90 sm:w-100 sm:ml-auto xs:w-100 mx-auto overflow-visible h-auto justify-between transform-3d bg-transparent z-0"
             >
               <div
-                class="relative flex flex-wrap flex-col md:w-50 sm:w-60 md:ml-auto sm:mx-auto sm:items-start md:items-start bg-transparent transform-0-50-origin transform-3d  justify-start z-0 transform-45deg-3d sm:pt-6"
+                class="relative flex flex-wrap flex-col md:w-50 sm:w-60 md:ml-auto sm:mx-auto sm:items-start md:items-start bg-transparent transform-0-50-origin transform-3d justify-start z-0 transform-45deg-3d sm:pt-6"
               >
                 <PortfolioGroup v-for="(group, i) in list" :key="i">
                   <div
@@ -127,7 +129,7 @@ export default {
   name: 'ProjectCard',
   components: {
     PortfolioGroup,
-    PortfolioCard
+    PortfolioCard,
   },
   props: {
     project: {
@@ -139,30 +141,30 @@ export default {
           description: '',
           category: '',
           brandColor: '',
-          pictures: []
+          pictures: [],
         }
-      }
+      },
     },
     rowChunks: {
       type: Number,
-      default: 3
+      default: 3,
     },
     index: {
       type: Number,
-      default: 1
-    }
+      default: 1,
+    },
   },
   data() {
     return {
       animationFly: '',
       animationShadow: '',
       animationFixedShadow: '',
-      clientHeight: 0
+      clientHeight: 0,
     }
   },
   computed: {
     ...mapState({
-      isMobile: (state) => state.window.isMobile
+      isMobile: (state) => state.window.isMobile,
     }),
     list() {
       let list = chunk(this.project.pictures, this.rowChunks)
@@ -172,11 +174,11 @@ export default {
     brandStyle() {
       if (this.project.brandColor) {
         return {
-          backgroundColor: this.project.brandColor
+          backgroundColor: this.project.brandColor,
         }
       }
       return {}
-    }
+    },
   },
   created() {
     if (process.client) {
@@ -221,7 +223,7 @@ export default {
           return i * 50
         },
         autoplay: false,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
       this.animationShadow = this.$anime({
         targets: `.project-section-${this.index} .works-movable-item-shadow`,
@@ -232,7 +234,7 @@ export default {
         delay(el, i) {
           return i * 50
         },
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
       this.animationFixedShadow = this.$anime({
         targets: `.project-section-${this.index} .works-fixed-item-shadow`,
@@ -247,9 +249,9 @@ export default {
         scaleY: 0.691172,
         scaleZ: 1,
         autoplay: false,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
-    }
-  }
+    },
+  },
 }
 </script>

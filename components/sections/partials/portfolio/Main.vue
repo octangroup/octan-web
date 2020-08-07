@@ -2,19 +2,27 @@
 <template>
   <div
     ref="wrapper"
-    class="t-0 justify-center xl:flex lg:flex overflow-hidden z-50 max-w-100 w-100 ml-auto z-50  hidden relative"
-    style="height:120vh"
+    class="t-0 justify-center xl:flex lg:flex overflow-hidden z-50 max-w-100 w-100 ml-auto z-50 hidden relative"
+    style="height: 120vh;"
   >
     <div
       class="relative flex w-screen justify-center w-80"
-      style="-webkit-transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);height:120vh;
-            transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;"
+      style="
+        -webkit-transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
+        height: 120vh;
+        transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      "
     >
       <div
         class="flex justify-start items-center bg-transparent works-scroll-container"
-        style="will-change: transform; transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+        style="
+          will-change: transform;
+          transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        "
       >
         <PortfolioGroup v-for="(group, i) in list" :key="i">
           <div
@@ -43,13 +51,13 @@ export default {
   name: 'MainPortfolio',
   components: {
     PortfolioCard,
-    PortfolioGroup
+    PortfolioGroup,
   },
   props: {
     items: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
@@ -57,18 +65,18 @@ export default {
       animationFly: '',
       animationShadow: '',
       animationFixedShadow: '',
-      clientHeight: 0
+      clientHeight: 0,
     }
   },
   computed: {
     ...mapState({
-      isMobile: (state) => state.window.isMobile
+      isMobile: (state) => state.window.isMobile,
     }),
     list() {
       let list = chunk(this.items, 3)
       list = chunk(list, 2)
       return list
-    }
+    },
   },
   created() {
     if (process.client) {
@@ -112,7 +120,7 @@ export default {
         targets: '.works-scroll-container',
         translateX: -1360,
         autoplay: false,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
       this.animationFly = this.$anime({
         targets: '.works-movable-item',
@@ -122,7 +130,7 @@ export default {
           return i * 50
         },
         autoplay: false,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
       this.animationShadow = this.$anime({
         targets: '.works-movable-item-shadow',
@@ -133,7 +141,7 @@ export default {
         delay(el, i) {
           return i * 50
         },
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
       this.animationFixedShadow = this.$anime({
         targets: '.works-fixed-item-shadow',
@@ -148,9 +156,9 @@ export default {
         scaleY: 0.691172,
         scaleZ: 1,
         autoplay: false,
-        easing: 'easeInOutSine'
+        easing: 'easeInOutSine',
       })
-    }
-  }
+    },
+  },
 }
 </script>
