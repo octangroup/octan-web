@@ -27,6 +27,7 @@
             v-scroll-to="{ el: item.link.hash ? '#' + item.link.hash : '#' }"
             :to="item.link"
             class="inherit-color no-underline cursor-pointer"
+            :title="item.label"
           >
             <span v-if="!item.button">
               {{ item.label }}

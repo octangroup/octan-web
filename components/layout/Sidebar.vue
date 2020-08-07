@@ -20,6 +20,7 @@
           <nuxt-link
             v-scroll-to="{ el: item.link.hash ? '#' + item.link.hash : null }"
             :to="item.link"
+            :title="item.label"
             class="inherit-color font-light no-underline"
           >
             <span @click="toggleSidebar">{{ item.label }}</span>
