@@ -112,6 +112,9 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    extractCSS: {
+      allChunks: true
+    },
     extend(config, ctx) {}
   },
   sitemap: {
