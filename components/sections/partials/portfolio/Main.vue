@@ -2,27 +2,13 @@
 <template>
   <div
     ref="wrapper"
-    class="t-0 justify-center xl:flex lg:flex overflow-hidden z-50 max-w-100 w-100 ml-auto z-50 hidden relative"
-    style="height: 120vh;"
+    class="t-0 justify-center xl:flex lg:flex overflow-hidden z-50 max-w-100 w-100 ml-auto z-50 hidden relative portfolio-main-wrapper"
   >
     <div
-      class="relative flex w-screen justify-center w-80"
-      style="
-        -webkit-transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
-        height: 120vh;
-        transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-      "
+      class="relative flex w-screen justify-center w-80 portfolio-main-wrapper__container"
     >
       <div
-        class="flex justify-start items-center bg-transparent works-scroll-container"
-        style="
-          will-change: transform;
-          transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform-style: preserve-3d;
-        "
+        class="flex justify-start items-center bg-transparent works-scroll-container portfolio-main-wrapper__scroller"
       >
         <PortfolioGroup v-for="(group, i) in list" :key="i">
           <div
@@ -162,3 +148,22 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.portfolio-main-wrapper {
+  height: 120vh;
+  &__container {
+    -webkit-transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
+    height: 120vh;
+    transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  &__scroller {
+    will-change: transform;
+    transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+}
+</style>

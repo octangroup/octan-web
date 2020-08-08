@@ -17,8 +17,7 @@
             't-10': bottomLeft || bottomRight,
             '-t-10': topLeft || topRight,
           }"
-          class="rounded-full absolute service-bubble-el mt-0 mb-0 xl:h-rem-40 xl:w-rem-40 h-rem-32 w-rem-32 xs:h-rem-24 xs:w-rem-24 mx-auto text-center shadow-md flex items-center justify-center text-2xl text-white"
-          style="background: linear-gradient(to right, #155477, #01263f);"
+          class="rounded-full absolute service-bubble-el mt-0 mb-0 xl:h-rem-40 xl:w-rem-40 h-rem-32 w-rem-32 xs:h-rem-24 xs:w-rem-24 mx-auto text-center shadow-md flex items-center justify-center text-2xl text-white service-bubble"
         >
           <img :src="icon" class="w-35 xl:ml-1 xl:mt-2 text-white" />
         </div>
@@ -64,3 +63,8 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.service-bubble {
+  background: linear-gradient(to right, #155477, #01263f);
+}
+</style>

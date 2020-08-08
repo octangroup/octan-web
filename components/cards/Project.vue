@@ -56,13 +56,7 @@
             class="-mt-32 h-screen justify-center flex sticky z-50 max-w-100 w-100 ml-auto z-0 md:hidden sm:hidden xs:hidden relative"
           >
             <div
-              class="relative flex w-screen h-screen justify-center w-100"
-              style="
-                -webkit-transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
-                transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-              "
+              class="relative flex w-screen h-screen justify-center w-100 portfolio-project"
             >
               <div
                 :class="['project-section-' + index]"
@@ -255,3 +249,11 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.portfolio-project {
+  -webkit-transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
+  transform: rotateX(49deg) rotateY(0deg) rotateZ(39deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+</style>

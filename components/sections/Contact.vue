@@ -52,7 +52,6 @@
           <div
             v-show="showForm"
             class="w-50 sm:w-60 xs:mt-12 xs:w-100 sm:px-0 xs:px-0"
-            style="display: none;"
           ></div>
         </transition>
       </div>

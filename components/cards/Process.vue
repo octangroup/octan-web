@@ -3,12 +3,10 @@
     <div class="mx-auto w-100">
       <div class="w-rem-18 h-rem-18 relative inline-block">
         <div
-          class="w-100 h-100 absolute z-0 -mt-3 rounded-full growing-icon p-1"
-          style="background: rgba(88, 220, 208, 0.1);"
+          class="w-100 h-100 absolute z-0 -mt-3 rounded-full growing-icon process-icon p-1"
         >
           <div
-            class="w-100 h-100 rounded-full mx-auto p-1"
-            style="background: rgba(88, 220, 208, 0.4);"
+            class="w-100 h-100 rounded-full mx-auto p-1 process-icon__inner"
           ></div>
         </div>
         <div
@@ -53,3 +51,11 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.process-icon {
+  background: rgba(88, 220, 208, 0.1);
+  &__inner {
+    background: rgba(88, 220, 208, 0.4);
+  }
+}
+</style>
