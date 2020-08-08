@@ -34,109 +34,109 @@ export default {
   components: {
     SectionHeader,
     MainSection,
-    SimplifiedSection
+    SimplifiedSection,
   },
   data() {
     return {
       items: [
         {
           ...require('~/assets/img/portfolio/vivahill/vivahill-main-1.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/nzeri2.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/statetra-main.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/safali2.1.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/nzeri.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/safali0.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/alu.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/statetra-mob-2.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/vivahill/vivahill-main-5.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/vivahill/vivahill-mob-1.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/furaha-main.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/hts/hts-main-1.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/knots/main-1.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/safzo.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/nzeri1.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/furaha-mob-1.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/hts/hts-main-2.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/techinrwanda/main-1.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/alu.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/statetra-mob-2.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/vivahill/vivahill-main-5.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/nzeri5.jpg'),
-          portait: true
+          portait: true,
         },
         {
           ...require('~/assets/img/portfolio/furaha-main.jpg'),
-          portait: false
+          portait: false,
         },
         {
           ...require('~/assets/img/portfolio/hts/hts-main-1.jpg'),
-          portait: false
-        }
-      ]
+          portait: false,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

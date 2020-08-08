@@ -21,24 +21,24 @@ export default {
   props: {
     animation: {
       type: String,
-      default: 'fade-in-right'
+      default: 'fade-in-right',
     },
     duration: {
       type: String,
-      default: '500'
+      default: '500',
     },
     offset: {
       type: String,
-      default: '0'
+      default: '0',
     },
     icon: {
       type: String,
-      default: ''
+      default: '',
     },
     innerClass: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

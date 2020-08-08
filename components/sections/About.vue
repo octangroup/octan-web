@@ -9,7 +9,7 @@
         We love our work
       </h1>
       <p
-        class="text-xl xs:text-lg  sm:text-lg mt-6 mb-12 leading-normal opacity-95 text-white"
+        class="text-xl xs:text-lg sm:text-lg mt-6 mb-12 leading-normal opacity-95 text-white"
       >
         We're skilled to provide Maximum Quality in Minimum Time Frame. How
         isn't a question!<br />
@@ -29,6 +29,6 @@
 
 <script>
 export default {
-  name: 'AboutSection'
+  name: 'AboutSection',
 }
 </script>

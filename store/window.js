@@ -1,6 +1,6 @@
 export const state = () => ({
   width: null,
-  isMobile: false
+  isMobile: false,
 })
 
 export const mutations = {
@@ -9,7 +9,7 @@ export const mutations = {
   },
   _setIsMobile(state, value) {
     state.isMobile = value
-  }
+  },
 }
 
 export const actions = {
@@ -19,5 +19,5 @@ export const actions = {
       return commit('_setIsMobile', true)
     }
     return commit('_setIsMobile', false)
-  }
+  },
 }

@@ -4,11 +4,11 @@
       We love working with new people, connect with us so we can get started!
     </SectionHeader>
 
-    <div class="xs:mx-auto  text-white pt-6 xs:pt-0">
-      <div class="xl:flex lg:flex md:flex sm:flex ">
+    <div class="xs:mx-auto text-white pt-6 xs:pt-0">
+      <div class="xl:flex lg:flex md:flex sm:flex">
         <div class="w-50 sm:w-40 md:w-50 xs:w-100">
           <h4
-            class="font-light my-4 xs:my-6 text-xl md:text-lg sm:text-base xs:text-base "
+            class="font-light my-4 xs:my-6 text-xl md:text-lg sm:text-base xs:text-base"
           >
             <a
               class="inherit-color no-underline"
@@ -51,8 +51,7 @@
         >
           <div
             v-show="showForm"
-            class="w-50 sm:w-60 xs:mt-12 xs:w-100  sm:px-0 xs:px-0"
-            style="display: none"
+            class="w-50 sm:w-60 xs:mt-12 xs:w-100 sm:px-0 xs:px-0"
           ></div>
         </transition>
       </div>
@@ -101,12 +100,12 @@ export default {
   name: 'ContactSection',
   components: {
     SectionHeader,
-    SectionWrapper
+    SectionWrapper,
   },
   data() {
     return {
-      showForm: false
+      showForm: false,
     }
-  }
+  },
 }
 </script>

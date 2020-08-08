@@ -1,7 +1,7 @@
 export const state = () => ({
   transparent: false,
   fixed: true,
-  showSidebar: false
+  showSidebar: false,
 })
 
 export const mutations = {
@@ -13,7 +13,7 @@ export const mutations = {
   },
   _setSidebarVisibility(state, value) {
     state.showSidebar = value
-  }
+  },
 }
 
 export const actions = {
@@ -25,5 +25,5 @@ export const actions = {
   },
   toggleSidebar({ commit }, value) {
     commit('_setSidebarVisibility', value)
-  }
+  },
 }

@@ -1,10 +1,10 @@
 <template>
   <div
-    class="w-80 h-rem-58 mt-10 lg:mt-6  md:w-100 mt-16 sm:w-100  md:mt-0 sm:mt-0  rounded-2xl   bg-white  shadow-lg relative  lg:l-1 xs:hidden"
+    class="w-80 h-rem-58 mt-10 lg:mt-6 md:w-100 mt-16 sm:w-100 md:mt-0 sm:mt-0 rounded-2xl bg-white shadow-lg relative lg:l-1 xs:hidden"
   >
-    <div class="absolute -mt-10  mx-auto  w-100 ">
+    <div class="absolute -mt-10 mx-auto w-100">
       <div
-        class="rounded-full mt-0 mb-0 h-rem-16 w-rem-16  bg-primary mx-auto text-center shadow-md flex items-center justify-center text-2xl text-white"
+        class="rounded-full mt-0 mb-0 h-rem-16 w-rem-16 bg-primary mx-auto text-center shadow-md flex items-center justify-center text-2xl text-white"
       >
         <transition
           mode="out-in"
@@ -40,18 +40,18 @@
           href="https://twitter.com/octangrp?ref_src=twsrc%5Etfw"
           ><img
             src="https://img.icons8.com/ios/50/000000/add-user-male.png"
-            class="w-rem-6"/></a
+            class="w-rem-6" /></a
       ></span>
       <span class="ml-6"
         ><a
           target="_blank"
           :href="
             'https://twitter.com/intent/tweet?screen_name=octangrp&ref_src=twsrc%5Etfw&text=' +
-              quotes[index].message
+            quotes[index].message
           "
           ><img
             src="https://img.icons8.com/ios/50/000000/retweet.png"
-            class="w-rem-6"/></a
+            class="w-rem-6" /></a
       ></span>
     </div>
   </div>
@@ -66,25 +66,25 @@ export default {
         {
           icon: 'mobile',
           message:
-            'A great and memorable experience is obtained through our amazing mobile apps.'
+            'A great and memorable experience is obtained through our amazing mobile apps.',
         },
         {
           icon: 'globe',
           message:
-            'A strong relationship with clients is built through our creative and inspiring websites.'
+            'A strong relationship with clients is built through our creative and inspiring websites.',
         },
         {
           icon: 'microchip',
           message:
-            'A tangible and cherishable experience is acquired through our well developed hardware systems.'
+            'A tangible and cherishable experience is acquired through our well developed hardware systems.',
         },
         {
           icon: 'pencil-alt',
           message:
-            'Outstanding brands are made through our creative and fancy graphic designs.'
-        }
+            'Outstanding brands are made through our creative and fancy graphic designs.',
+        },
       ],
-      index: 0
+      index: 0,
     }
   },
   created() {
@@ -100,7 +100,7 @@ export default {
       }
 
       return (this.index = 0)
-    }
-  }
+    },
+  },
 }
 </script>
