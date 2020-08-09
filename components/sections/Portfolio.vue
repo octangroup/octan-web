@@ -18,8 +18,8 @@
           </div>
         </div>
       </div>
-      <MainSection :items="items" />
-      <SimplifiedSection :items="items" />
+      <MainSection v-if="loaded" :items="items" />
+      <SimplifiedSection v-if="loaded" :items="items" />
     </div>
   </div>
 </template>
@@ -136,7 +136,11 @@ export default {
           portait: false,
         },
       ],
+      loaded: false,
     }
+  },
+  mounted() {
+    this.loaded = true
   },
 }
 </script>

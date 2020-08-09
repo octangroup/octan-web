@@ -1,3 +1,3 @@
 <template>
-  <img src="~/static/assets/main-shape.svg" />
+  <img src="~/assets/vectors/main-shape.svg" />
 </template>

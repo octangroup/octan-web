@@ -15,8 +15,7 @@
               target="_blank"
               href="https://www.google.cm/maps/place/Octan+Group/@-1.9545194,30.1051167,15z/data=!4m2!3m1!1s0x0:0x4eb7dc21ba41fa6?sa=X&ved=2ahUKEwioqNr4tLfnAhVGdcAKHSA3CdwQ_BIwE3oECAwQCA"
             >
-              <i class="fi flaticon-placeholder font-bold mr-2"></i> 27 Kg 8 Ave
-              Kigali, Rwanda
+              <og-icon class="mr-2" icon="map" /> 27 Kg 8 Ave Kigali, Rwanda
             </a>
           </h4>
           <h4
@@ -26,7 +25,8 @@
               class="inherit-color no-underline"
               target="_blank"
               href="mailto:hello@octan.group"
-              ><i class="fi flaticon-mail mr-2"></i>
+            >
+              <og-icon class="mr-2" icon="email" />
               hello@octan.group
             </a>
           </h4>
@@ -38,7 +38,7 @@
               target="_blank"
               href="tel:+250780468644"
             >
-              <i class="fi flaticon-phone-call mr-2"></i> +250 780 468 644
+              <og-icon class="mr-2" icon="phone" /> +250 780 468 644
             </a>
           </h4>
         </div>
@@ -62,7 +62,7 @@
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
             >
-              <font-awesome-icon :icon="['fab', 'twitter']"></font-awesome-icon>
+              <og-icon icon="twitter" />
             </button>
           </a>
         </div>
@@ -71,9 +71,7 @@
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
             >
-              <font-awesome-icon
-                :icon="['fab', 'facebook-f']"
-              ></font-awesome-icon>
+              <og-icon icon="facebook" />
             </button>
           </a>
         </div>
@@ -82,9 +80,16 @@
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
             >
-              <font-awesome-icon
-                :icon="['fab', 'instagram']"
-              ></font-awesome-icon>
+              <og-icon icon="instagram" />
+            </button>
+          </a>
+        </div>
+        <div class="mx-2">
+          <a target="_blank" href="https://github.com/octangroup">
+            <button
+              class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
+            >
+              <og-icon icon="github" />
             </button>
           </a>
         </div>
