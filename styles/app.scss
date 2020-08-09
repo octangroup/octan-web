@@ -5,8 +5,8 @@
 
 .curves-pattern {
   height: 115px;
-  -webkit-mask-image: url("/img/pattern.png");
-  mask-image: url("/img/pattern.png");
+  -webkit-mask-image: url("/img/pattern.webp");
+  mask-image: url("/img/pattern.webp");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: repeat-x;
@@ -17,7 +17,7 @@
 
 .curves-pattern-overlay:after,
 .curves-pattern-overlay:before {
-  background: url("/img/pattern_2.png") repeat-x 50%;
+  background: url("/img/pattern_2.webp") repeat-x 50%;
   background-size: 1440px;
   content: "";
   display: block;
