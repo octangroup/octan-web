@@ -141,10 +141,12 @@ export default {
     Disallow: false,
   },
   responsiveLoader: {
-    name: 'img/[hash:7]-[width].[ext]',
     format: 'webp',
     adapter: require('responsive-loader/sharp'),
+    sizes: [320, 640, 960, 1200, 1800, 2400],
     placeholder: true,
+    placeholderSize: 100,
+    quality: 75,
   },
   purgeCSS: {
     whitelist: ['-ml-70%-temp', 'w-70-temp'],

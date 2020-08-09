@@ -5,7 +5,9 @@
     <div
       class="h-rem-74 w-rem-74 sm:h-rem-64 sm:w-rem-64 xxs:h-rem-48 xxs:w-rem-48 rounded-full overflow-hidden mx-auto my-2"
     >
-      <img :srcset="member.avatar.srcSet" class="clip-full" />
+      <ImagePlaceholder :image="member.avatar">
+        <img :srcset="member.avatar.srcSet" class="clip-full" />
+      </ImagePlaceholder>
     </div>
     <div class="px-3 py-2">
       <h5 class="my-2 font-primary text-black">{{ member.names }}</h5>
@@ -15,8 +17,12 @@
 </template>
 
 <script>
+import ImagePlaceholder from '~/components/misc/ImagePlaceholder'
 export default {
   name: 'TeamMember',
+  components: {
+    ImagePlaceholder,
+  },
   props: {
     member: {
       type: Object,

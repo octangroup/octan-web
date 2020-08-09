@@ -18,6 +18,7 @@
             :title="partner.title"
             ><img
               :src="partner.logo"
+              :srcset="partner.logo.srcSet"
               class="w-50 lg:w-60 md:w-70 sm:w-70 xs:w-80"
           /></a>
         </div>
