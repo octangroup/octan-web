@@ -18,13 +18,14 @@
           </div>
         </div>
       </div>
-      <MainSection v-if="loaded" :items="items" />
-      <SimplifiedSection v-if="loaded" :items="items" />
+      <MainSection v-if="loaded && !isMobile" :items="items" />
+      <SimplifiedSection v-if="loaded && isMobile" :items="items" />
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import SectionHeader from '~/components/sections/partials/Header'
 import MainSection from '~/components/sections/partials/portfolio/Main'
 import SimplifiedSection from '~/components/sections/partials/portfolio/Simplified'
@@ -138,6 +139,11 @@ export default {
       ],
       loaded: false,
     }
+  },
+  computed: {
+    ...mapState({
+      isMobile: (state) => state.window.isMobile,
+    }),
   },
   mounted() {
     this.loaded = true

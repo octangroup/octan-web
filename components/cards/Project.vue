@@ -51,7 +51,7 @@
             </button>
           </a>
         </div>
-        <div class="w-60 z-999 hidden lg:block xl:block">
+        <div v-if="!isMobile" class="w-60 z-999 hidden lg:block xl:block">
           <div
             class="-mt-32 h-screen justify-center flex sticky z-50 max-w-100 w-100 ml-auto z-0 md:hidden sm:hidden xs:hidden relative"
           >
@@ -80,7 +80,10 @@
             </div>
           </div>
         </div>
-        <div class="xl:hidden lg:hidden overflow-hidden sm:pb-0 md:pb-4">
+        <div
+          v-if="isMobile"
+          class="xl:hidden lg:hidden overflow-hidden sm:pb-0 md:pb-4"
+        >
           <div
             class="md:ml-12 md:pl-12 sm:ml-12 sm:pl-16 sm:pb-12 sm:mt-6 md:pt-12 xs:mt-12 relative flex flex-col z-10 items-center w-80 sm:w-100 xs:mx-auto h-auto z-90"
           >
