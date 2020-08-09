@@ -1,10 +1,12 @@
 @font-face {
-    font-family: Aquatico;
-    src: url(../static/assets/fonts/Aquatico-Regular.otf)
+    font-family: "Aquatico";
+    font-display: swap;
+    font-style: normal;
+    src: url("~assets/fonts/Aquatico-Regular.otf")
   }
   
   // Typography
-  $primary-font: Aquatico, Comic Sans MS, Helvetica, sans-serif;
+  $primary-font: "Aquatico", Comic Sans MS, Helvetica, sans-serif;
   // $secondary-font: 'Nunito ', sans-serif;
   $default-font: 'Quicksand', sans-serif;
   

@@ -6,7 +6,7 @@
     <div class="bg-primary-darker h-100 fixed w-100">
       <div class="my-0 w-65 py-4 text-right">
         <span class="text-2xl text-white" @click="toggleSidebar">
-          <i class="fi flaticon-close"></i>
+          <og-icon icon="close" size="medium" />
         </span>
       </div>
       <ul

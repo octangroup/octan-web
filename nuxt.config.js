@@ -53,18 +53,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    '~/styles/app.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    'animate.css/animate.css',
-    '~/static/assets/fonts/_flaticon.css',
-    '~/static/assets/fonts/flaticonV2/flaticon.css',
-  ],
+  css: ['~/styles/app.scss', 'animate.css/animate.css'],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/fontawesome.js',
+    '~/plugins/ogIcon.js',
     '~/plugins/anime.js',
     '~/plugins/scrollTo.js',
     {
@@ -80,6 +74,12 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
+    [
+      'nuxt-purgecss',
+      {
+        enabled: true,
+      },
+    ],
     // Doc: https://github.com/nuxt-community/analytics-module
     [
       '@nuxtjs/google-analytics',
@@ -95,6 +95,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
+    // 'nuxt-svg-loader',
     '@nuxtjs/dotenv',
     'nuxt-responsive-loader',
     'vue-scrollto/nuxt',
@@ -138,5 +139,22 @@ export default {
     Allow: '/',
     Sitemap: 'https://octan.group/sitemap.xml',
     Disallow: false,
+  },
+  responsiveLoader: {
+    name: 'img/[hash:7]-[width].[ext]',
+    format: 'webp',
+    adapter: require('responsive-loader/sharp'),
+    placeholder: true,
+  },
+  purgeCSS: {
+    whitelist: ['-ml-70%-temp', 'w-70-temp'],
+    whitelistPatterns: [/animate$/, /^aos/, /aos$/, /^nuxt/, /^og-icon/],
+    whitelistPatternsChildren: [
+      /animate$/,
+      /^aos/,
+      /aos$/,
+      /^nuxt/,
+      /^og-icon/,
+    ],
   },
 }

@@ -13,7 +13,7 @@
           leave-active-class="animated fadeOutLeft"
           :duration="500"
           ><span :key="index">
-            <font-awesome-icon :icon="quotes[index].icon"></font-awesome-icon>
+            <og-icon :icon="quotes[index].icon" size="medium" />
           </span>
         </transition>
       </div>
@@ -79,7 +79,7 @@ export default {
             'A tangible and cherishable experience is acquired through our well developed hardware systems.',
         },
         {
-          icon: 'pencil-alt',
+          icon: 'pencil',
           message:
             'Outstanding brands are made through our creative and fancy graphic designs.',
         },
