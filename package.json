@@ -62,7 +62,7 @@
     "sass-loader": "^9.0.3",
     "sharp": "^0.25.4",
     "stylelint": "^13.6.1",
-    "vue-jest": "^4.0.0-0",
+    "vue-jest": "^4.0.0-beta.5",
     "vue-svg-loader": "^0.16.0"
   }
 }
