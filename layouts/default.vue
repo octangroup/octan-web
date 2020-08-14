@@ -6,7 +6,7 @@
         :class="{ '-ml-70%-temp': showSidebar }"
       >
         <Navbar :items="navItems" />
-        <div class="w-100 relative h-100" @click="toggleSidebar">
+        <div class="w-100 relative min-h-screen" @click="toggleSidebar">
           <nuxt />
         </div>
       </div>
@@ -46,6 +46,10 @@ export default {
         {
           link: { path: '/team' },
           label: 'Team',
+        },
+        {
+          link: { path: '/blog' },
+          label: 'Blog',
         },
         {
           link: { path: '/', hash: 'contact-us' },
