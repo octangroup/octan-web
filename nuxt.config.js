@@ -119,6 +119,7 @@ export default {
   },
   sitemap: {
     hostname: 'https://octan.group',
+    path: '/main-sitemap.xml',
     gzip: true,
     defaults: {
       changefreq: 'monthly',
@@ -137,7 +138,7 @@ export default {
   robots: {
     UserAgent: '*',
     Allow: '/',
-    Sitemap: 'https://octan.group/sitemap.xml',
+    Sitemap: 'https://octan.group/main-sitemap.xml',
     Disallow: false,
   },
   responsiveLoader: {
