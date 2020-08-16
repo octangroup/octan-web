@@ -30,10 +30,10 @@
         >
           <nuxt-link :to="`/blog/${post.sys.id}/${toKebab(post.fields.title)}`">
             <img :src="post.fields.cover.fields.file.url" />
-            <div class="p-2">
+            <div class="">
               <h3 class="text-2xl mb-2">{{ post.fields.title }}</h3>
               <div
-                class="text-left"
+                class="text-left mx-6"
                 v-html="renderDescription(post.fields.content)"
               />
             </div>
