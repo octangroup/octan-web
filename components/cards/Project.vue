@@ -44,9 +44,11 @@
             >
               Visit Site
               <span class="pl-3">
-                <font-awesome-icon
-                  icon="long-arrow-alt-right"
-                ></font-awesome-icon>
+                <og-icon
+                  vertical-align="-0.385em"
+                  icon="arrow-right"
+                  color="black"
+                />
               </span>
             </button>
           </a>
