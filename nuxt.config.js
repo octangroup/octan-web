@@ -101,6 +101,18 @@ export default {
     'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    [
+      'nuxt-bugsnag',
+      {
+        config: {
+          apiKey: 'c8c5617f28bbe034f937e84d31675eab',
+          enabledReleaseStages: ['staging', 'production'],
+          reporterOptions: {
+            releaseStage: process.env.NODE_ENV,
+          },
+        },
+      },
+    ],
   ],
   /*
    ** Axios module configuration
