@@ -1,7 +1,14 @@
 <template>
   <i
     class="og-icon"
-    :class="[`og-icon--${size}`, `og-icon__content--${icon}`]"
+    :class="[
+      `og-icon--${size}`,
+      `og-icon__content--${icon}`,
+      `og-icon__color--${color}`,
+    ]"
+    :style="{
+      verticalAlign: verticalAlign,
+    }"
   />
 </template>
 
@@ -17,6 +24,14 @@ export default {
       type: String,
       default: 'small',
     },
+    color: {
+      type: String,
+      default: 'white',
+    },
+    verticalAlign: {
+      type: String,
+      default: '-0.125em',
+    },
   },
 }
 </script>
@@ -26,12 +41,20 @@ export default {
   display: inline-block;
   font-size: inherit;
   overflow: visible;
-  vertical-align: -0.125em;
   fill: white;
   height: 20px;
   width: 20px;
-  background-color: white;
   mask-repeat: no-repeat;
+
+  &__color {
+    background-color: white;
+    &--white {
+      background-color: white;
+    }
+    &--black {
+      background-color: #000;
+    }
+  }
 
   &--small {
     height: 20px;
@@ -79,6 +102,9 @@ export default {
     }
     &--github {
       mask: url('~assets/vectors/icons/github.svg') no-repeat center;
+    }
+    &--arrow-right {
+      mask: url('~assets/vectors/icons/arrow-right.svg') no-repeat center;
     }
   }
 }
