@@ -67,15 +67,6 @@
           </a>
         </div>
         <div class="mx-2">
-          <a target="_blank" href="https://facebook.com/octangrp">
-            <button
-              class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
-            >
-              <og-icon icon="facebook" />
-            </button>
-          </a>
-        </div>
-        <div class="mx-2">
           <a target="_blank" href="https://www.instagram.com/octangrp">
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
