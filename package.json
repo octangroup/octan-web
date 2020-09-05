@@ -58,7 +58,7 @@
     "jest": "^26.4.2",
     "lint-staged": "^10.2.13",
     "prettier": "^2.0.5",
-    "responsive-loader": "^2.0.2",
+    "responsive-loader": "^2.1.0",
     "sass": "^1.26.9",
     "sass-loader": "^10.0.1",
     "sharp": "^0.25.4",
