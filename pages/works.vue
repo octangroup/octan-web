@@ -17,7 +17,7 @@
       <div class="relative overflow-hidden p-0">
         <div class="curves-pattern-overlay z-0 p-0 m-0"></div>
         <div
-          style="background-color: #f7f7f7;"
+          style="background-color: #f7f7f7"
           class="curves-pattern relative z-10 p-0 m-0 border-none"
         ></div>
       </div>

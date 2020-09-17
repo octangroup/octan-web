@@ -1,5 +1,5 @@
-<template
-  ><div
+<template>
+  <div
     ref="wrapper"
     class="py-12 z-50 relative overflow-hidden"
     :style="brandStyle"
