@@ -9,8 +9,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js && npm run lint:style",
     "lint:format": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore",
     "test": "jest"
   },
   "lint-staged": {
@@ -63,7 +65,9 @@
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
     "sharp": "^0.26.0",
-    "stylelint": "^13.7.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
     "vue-jest": "^4.0.0-rc.0",
     "vue-svg-loader": "^0.16.0"
   }
