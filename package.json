@@ -64,7 +64,7 @@
     "responsive-loader": "^2.1.1",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
-    "sharp": "^0.26.0",
+    "sharp": "^0.26.1",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
