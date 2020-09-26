@@ -84,6 +84,11 @@ export default {
           link: 'http://business-inventor.com/',
           logo: require('~/assets/img/partners/business-inventor-logo.png'),
         },
+        {
+          title: 'Tech Team Berlin',
+          link: 'https://techteamberlin.com/',
+          logo: require('~/assets/img/partners/tech-team-berlin.png'),
+        },
       ],
     }
   },
