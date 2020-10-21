@@ -38,7 +38,7 @@
               target="_blank"
               href="tel:+250780468644"
             >
-              <og-icon class="mr-2" icon="phone" /> +250 780 468 644
+              <og-icon class="mr-2" icon="phone" /> +250 735 113 908
             </a>
           </h4>
         </div>
