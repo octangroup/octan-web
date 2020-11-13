@@ -29,6 +29,44 @@ export default {
         name: 'theme-color',
         content: '#01263F',
       },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@octangrp' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@octangrp' },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Octan Group',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Software Engineering',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/og-image.png',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/og-image.png',
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Octan Group',
+      },
+      { hid: 'og:title', name: 'og:title', content: 'Octan Group' },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Software Engineering',
+      },
     ],
     link: [
       {
