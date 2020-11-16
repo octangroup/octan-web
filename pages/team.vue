@@ -43,36 +43,43 @@ export default {
           avatar: require('~/assets/img/team/arsy.jpg'),
           names: 'Arsene J. Karema',
           position: 'UI & Graphic',
+          email: 'arsene@octan.group',
         },
         {
           avatar: require('~/assets/img/team/yannick.jpg'),
           names: 'Yannick Musafiri',
           position: 'Back-End & UI',
+          email: 'yannick@octan.group',
         },
         {
           avatar: require('~/assets/img/team/lewis.jpg'),
           names: 'Lewis Nkuranga',
           position: 'Back-End',
+          email: 'lewis@octan.group',
         },
         {
           avatar: require('~/assets/img/team/promesse.jpg'),
           names: 'Promesse D. Ishimwe',
           position: 'Back-End',
+          email: 'promesse@octan.group',
         },
         {
           avatar: require('~/assets/img/team/herve.jpg'),
           names: 'Herve Ngenzi',
           position: 'Back-End',
+          email: 'herve@octan.group',
         },
         {
           avatar: require('~/assets/img/team/bobo.jpg'),
           names: 'Landry Gahizi',
           position: 'UI, UX & Graphic',
+          email: 'landry@octan.group',
         },
         {
           avatar: require('~/assets/img/team/derrick.jpg'),
           names: 'Derrick Murengezi',
           position: 'Sales',
+          email: 'derrick@octan.group',
         },
       ],
     }

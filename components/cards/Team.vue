@@ -12,6 +12,11 @@
     <div class="px-3 py-2">
       <h5 class="my-2 font-primary text-black">{{ member.names }}</h5>
       <p class="font-medium">{{ member.position }}</p>
+      <p class="font-medium text-sm">
+        <a :href="`mailto:` + member.email" class="underline">{{
+          member.email
+        }}</a>
+      </p>
     </div>
   </div>
 </template>

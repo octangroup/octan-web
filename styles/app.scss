@@ -1,12 +1,10 @@
 @import 'variables';
 @import '~og-css/sass/og';
 
-
-
 .curves-pattern {
   height: 115px;
-  -webkit-mask-image: url("/img/pattern.webp");
-  mask-image: url("/img/pattern.webp");
+  -webkit-mask-image: url('/img/pattern.webp');
+  mask-image: url('/img/pattern.webp');
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: repeat-x;
@@ -17,9 +15,9 @@
 
 .curves-pattern-overlay:after,
 .curves-pattern-overlay:before {
-  background: url("/img/pattern_2.webp") repeat-x 50%;
+  background: url('/img/pattern_2.webp') repeat-x 50%;
   background-size: 1440px;
-  content: "";
+  content: '';
   display: block;
   height: 115px;
   position: absolute;
@@ -58,7 +56,7 @@ video {
 }
 
 .font-christmas {
-  font-family: 'Mountains of Christmas', cursive !important
+  font-family: 'Mountains of Christmas', cursive !important;
 }
 
 h3,
@@ -71,7 +69,6 @@ h6 {
 .-b-8 {
   bottom: -8% !important;
 }
-
 
 .mt-vw-1 {
   margin-top: 1vw !important;
@@ -165,11 +162,11 @@ html {
   }
 
   50% {
-    -webkit-transform: scale(0.90);
-    -moz-transform: scale(0.90);
-    -o-transform: scale(0.90);
-    -ms-transform: scale(0.90);
-    transform: scale(0.90);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   100% {
@@ -192,11 +189,11 @@ html {
   }
 
   50% {
-    -webkit-transform: scale(0.90);
-    -moz-transform: scale(0.90);
-    -o-transform: scale(0.90);
-    -ms-transform: scale(0.90);
-    transform: scale(0.90);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   100% {
@@ -218,4 +215,12 @@ html {
 
 .-ml-70\%-temp {
   margin-left: -70%;
+}
+
+.underline {
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
