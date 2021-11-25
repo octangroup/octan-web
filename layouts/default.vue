@@ -44,10 +44,6 @@ export default {
           label: 'Works',
         },
         {
-          link: { path: '/team' },
-          label: 'Team',
-        },
-        {
           link: { path: '/', hash: 'contact-us' },
           label: 'Contact Us',
           button: true,
