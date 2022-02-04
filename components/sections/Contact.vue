@@ -36,9 +36,9 @@
             <a
               class="inherit-color no-underline"
               target="_blank"
-              href="tel:+250780468644"
+              href="tel:+250734546057"
             >
-              <og-icon class="mr-2" icon="phone" /> +250 735 113 908
+              <og-icon class="mr-2" icon="phone" /> +250 734 546 057
             </a>
           </h4>
         </div>
