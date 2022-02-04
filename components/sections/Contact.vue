@@ -15,7 +15,7 @@
               target="_blank"
               href="https://www.google.cm/maps/place/Octan+Group/@-1.9545194,30.1051167,15z/data=!4m2!3m1!1s0x0:0x4eb7dc21ba41fa6?sa=X&ved=2ahUKEwioqNr4tLfnAhVGdcAKHSA3CdwQ_BIwE3oECAwQCA"
             >
-              <og-icon class="mr-2" icon="map" /> 27 Kg 8 Ave Kigali, Rwanda
+              <og-icon class="mr-2" icon="map" /> KG 33 Ave Kigali, Rwanda
             </a>
           </h4>
           <h4
