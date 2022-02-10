@@ -42,7 +42,7 @@ export default {
         {
           title: 'Ried Berlin',
           link: 'https://www.ried-berlin.com',
-          logo: require('~/assets/img/partners/ried-logo.png'),
+          logo: require('~/assets/img/partners/ried-logo.svg'),
         },
         {
           title: 'Folkdays',
@@ -57,12 +57,12 @@ export default {
         {
           title: 'German Tech Network',
           link: 'https://techinrwanda.com',
-          logo: require('~/assets/img/partners/techinruanda-logo.png'),
+          logo: require('~/assets/img/partners/techinruanda-logo.svg'),
         },
         {
           title: 'Dacade',
           link: 'https://dacade.org',
-          logo: require('~/assets/img/partners/dacade-logo.png'),
+          logo: require('~/assets/img/partners/dacade-logo.svg'),
         },
         {
           title: 'betahills',
@@ -77,7 +77,7 @@ export default {
         {
           title: 'Codeshift',
           link: 'https://www.codeshift.co/',
-          logo: require('~/assets/img/partners/codeshift.png'),
+          logo: require('~/assets/img/partners/codeshift.svg'),
         },
         {
           title: 'ALUSB',
