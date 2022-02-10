@@ -55,14 +55,14 @@ export default {
           logo: require('~/assets/img/partners/coa-logo.png'),
         },
         {
-          title: 'ALUSB',
-          link: 'https://www.alusb.com/graduation/',
-          logo: require('~/assets/img/partners/alusb-logo.png'),
-        },
-        {
           title: 'German Tech Network',
           link: 'https://techinrwanda.com',
           logo: require('~/assets/img/partners/techinruanda-logo.png'),
+        },
+        {
+          title: 'Dacade',
+          link: 'https://dacade.org',
+          logo: require('~/assets/img/partners/dacade-logo.png'),
         },
         {
           title: 'betahills',
@@ -75,14 +75,14 @@ export default {
           logo: require('~/assets/img/partners/ape-unit-logo.png'),
         },
         {
-          title: 'Dacade',
-          link: 'https://dacade.org',
-          logo: require('~/assets/img/partners/dacade-logo.png'),
-        },
-        {
           title: 'Codeshift',
           link: 'https://www.codeshift.co/',
           logo: require('~/assets/img/partners/codeshift.png'),
+        },
+        {
+          title: 'ALUSB',
+          link: 'https://www.alusb.com/graduation/',
+          logo: require('~/assets/img/partners/alusb-logo.png'),
         },
       ],
     }
