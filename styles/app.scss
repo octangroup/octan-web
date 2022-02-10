@@ -1,6 +1,10 @@
 @import 'variables';
 @import '~og-css/sass/og';
 
+.body {
+  background-color: white;
+}
+
 .curves-pattern {
   height: 115px;
   -webkit-mask-image: url('/img/pattern.webp');

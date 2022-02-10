@@ -13,7 +13,7 @@
         <div>
           <a
             :href="partner.link"
-            class="inherit-color no-underline portfolio-icon transition-1s"
+            class="inherit-color no-underline portfolio-icon transition-500ms block"
             target="_blank"
             :title="partner.title"
             ><img
@@ -40,9 +40,9 @@ export default {
     return {
       list: [
         {
-          title: 'Proto',
-          link: 'https://www.proto.cx/',
-          logo: require('~/assets/img/partners/proto.png'),
+          title: 'Ried Berlin',
+          link: 'https://www.ried-berlin.com',
+          logo: require('~/assets/img/partners/ried-logo.png'),
         },
         {
           title: 'Folkdays',
@@ -62,7 +62,7 @@ export default {
         {
           title: 'German Tech Network',
           link: 'https://techinrwanda.com',
-          logo: require('~/assets/img/partners/techinrwanda-logo.png'),
+          logo: require('~/assets/img/partners/techinruanda-logo.png'),
         },
         {
           title: 'betahills',
@@ -80,9 +80,9 @@ export default {
           logo: require('~/assets/img/partners/dacade-logo.png'),
         },
         {
-          title: 'Business Inventor',
-          link: 'http://business-inventor.com/',
-          logo: require('~/assets/img/partners/business-inventor-logo.png'),
+          title: 'Codeshift',
+          link: 'https://www.codeshift.co/',
+          logo: require('~/assets/img/partners/codeshift.png'),
         },
       ],
     }

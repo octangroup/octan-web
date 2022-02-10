@@ -52,30 +52,6 @@ export default {
           email: 'yannick@octan.group',
         },
         {
-          avatar: require('~/assets/img/team/lewis.jpg'),
-          names: 'Lewis Nkuranga',
-          position: 'Back-End',
-          email: 'lewis@octan.group',
-        },
-        {
-          avatar: require('~/assets/img/team/promesse.jpg'),
-          names: 'Promesse D. Ishimwe',
-          position: 'Back-End',
-          email: 'promesse@octan.group',
-        },
-        {
-          avatar: require('~/assets/img/team/herve.jpg'),
-          names: 'Herve Ngenzi',
-          position: 'Back-End',
-          email: 'herve@octan.group',
-        },
-        {
-          avatar: require('~/assets/img/team/bobo.jpg'),
-          names: 'Landry Gahizi',
-          position: 'UI, UX & Graphic',
-          email: 'landry@octan.group',
-        },
-        {
           avatar: require('~/assets/img/team/derrick.jpg'),
           names: 'Derrick Murengezi',
           position: 'Sales',
