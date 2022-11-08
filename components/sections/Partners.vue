@@ -84,6 +84,11 @@ export default {
           link: 'https://www.alusb.com/graduation/',
           logo: require('~/assets/img/partners/alusb-logo.png'),
         },
+        {
+          title: 'Tech Team Berlin',
+          link: 'https://techteamberlin.com/',
+          logo: require('~/assets/img/partners/tech-team-berlin.png'),
+        },
       ],
     }
   },
