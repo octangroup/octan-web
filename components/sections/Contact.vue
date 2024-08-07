@@ -67,11 +67,11 @@
           </a>
         </div>
         <div class="mx-2">
-          <a target="_blank" href="https://www.instagram.com/octangrp">
+          <a target="_blank" href="https://rw.linkedin.com/company/octan-grp">
             <button
               class="btn bg-primary-lightest text-white h-rem-12 w-rem-12 p-0 rounded-full text-xl text-center"
             >
-              <og-icon icon="instagram" />
+              <og-icon icon="linkedin" />
             </button>
           </a>
         </div>

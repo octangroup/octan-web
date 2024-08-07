@@ -103,6 +103,9 @@ export default {
     &--github {
       mask: url('~assets/vectors/icons/github.svg') no-repeat center;
     }
+    &--linkedin {
+      mask: url('~assets/vectors/icons/linkedin.svg') no-repeat center;
+    }
     &--arrow-right {
       mask: url('~assets/vectors/icons/arrow-right.svg') no-repeat center;
     }
