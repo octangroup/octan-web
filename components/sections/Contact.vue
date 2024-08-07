@@ -15,7 +15,7 @@
               target="_blank"
               href="https://www.google.cm/maps/place/Octan+Group/@-1.9545194,30.1051167,15z/data=!4m2!3m1!1s0x0:0x4eb7dc21ba41fa6?sa=X&ved=2ahUKEwioqNr4tLfnAhVGdcAKHSA3CdwQ_BIwE3oECAwQCA"
             >
-              <og-icon class="mr-2" icon="map" /> KG 33 Ave Kigali, Rwanda
+              <og-icon class="mr-2" icon="map" /> KG 566 Street Kigali, Rwanda
             </a>
           </h4>
           <h4
@@ -30,7 +30,7 @@
               hello@octan.group
             </a>
           </h4>
-          <h4
+          <!-- <h4
             class="font-light my-4 xs:my-6 text-xl md:text-lg sm:text-base xs:text-base"
           >
             <a
@@ -40,7 +40,7 @@
             >
               <og-icon class="mr-2" icon="phone" /> +250 734 546 057
             </a>
-          </h4>
+          </h4> -->
         </div>
         <transition
           mode="out-in"
