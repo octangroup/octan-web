@@ -2,9 +2,9 @@
 [[redirects]]
   from = "https://octan.group"
   to = "https://octan.rw"
-  status = 301!
+  status = "301!"
 
 [[redirects]]
   from = "https://www.octan.group"
   to = "https://www.octan.rw"
-  status = 301!
+  status = "301!"
