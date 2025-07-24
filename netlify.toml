@@ -1,10 +1,10 @@
-# Redirects from octan.group
+# Redirects from octan.group to octan.rw
 [[redirects]]
-  from = "https://octan.group"
-  to = "https://octan.rw"
-  status = "301!"
+  from = "https://octan.group/*"
+  to = "https://octan.rw/:splat"
+  status = 301
 
 [[redirects]]
-  from = "https://www.octan.group"
-  to = "https://www.octan.rw"
-  status = "301!"
+  from = "https://www.octan.group/*"
+  to = "https://octan.rw/:splat"
+  status = 301
