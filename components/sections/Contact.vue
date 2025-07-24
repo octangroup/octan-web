@@ -27,7 +27,7 @@
               href="mailto:hello@octan.group"
             >
               <og-icon class="mr-2" icon="email" />
-              hello@octan.group
+              hello@octan.rw
             </a>
           </h4>
           <!-- <h4

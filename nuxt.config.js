@@ -1,9 +1,11 @@
+import seoKeywords from './seo/keywords'
+
 export default {
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Octan Group - Software Engineering',
+    title: 'Octan - Software Engineering',
     meta: [
       {
         charset: 'utf-8',
@@ -16,13 +18,12 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Octan Group is a full-stack software development company based in Rwanda. The team primarily works for clients in Europe and North America and has experience in the fashion, travel, education, healthcare and financial services industries. Octan also plays an active role in shaping the Rwandan tech scene by spearheading peer-mentoring efforts and community-driven open source projects.',
+          'Octan is a full-stack software development company based in Rwanda. The team primarily works for clients in Europe and North America and has experience in the fashion, travel, education, healthcare and financial services industries. Octan also plays an active role in shaping the Rwandan tech scene by spearheading peer-mentoring efforts and community-driven open source projects.',
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content:
-          'software developers in rwanda, software developers, websites in rwanda, octan group, octan grp, Octan ltd, octan limited, mobile application in rwanda, mobile application development, web development in rwanda, web development, app development in rwanda, IT in rwanda, websites, app development, mobile development, ios development, android development, windows software development, ios development in rwanda, android development in rwanda, windows software development in rwanda, octan rwanda, octan grp rwanda, octan group rwanda, tech, technology, company, rwanda, rails, ruby, vue js, vue.js, php, laravel, lumen, shopify, wordpress, iot, javascript, kotlin, java, react native, blockchain, bpo, outsourcing, RasperryPi, rasperry pi, software testing, smart contracts, advertising, communication design, concept, corporate design,  corporate identity,  crypto,  digital,  digital design,  editorial design, exhibition design, graphic design, interaction design, new media, screen design, type design, typography, visual communication, web design, web development, freelancers, developers',
+        content: seoKeywords.join(', '),
       },
       {
         hid: 'theme-color',
@@ -39,7 +40,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Octan Group',
+        content: 'Octan',
       },
       {
         hid: 'twitter:description',
@@ -59,9 +60,9 @@ export default {
       {
         hid: 'og:site_name',
         name: 'og:site_name',
-        content: 'Octan Group',
+        content: 'Octan',
       },
-      { hid: 'og:title', name: 'og:title', content: 'Octan Group' },
+      { hid: 'og:title', name: 'og:title', content: 'Octan' },
       {
         hid: 'og:description',
         name: 'og:description',
@@ -167,7 +168,7 @@ export default {
     extend(config, ctx) {},
   },
   sitemap: {
-    hostname: 'https://octan.group',
+    hostname: 'https://octan.rw',
     path: '/main-sitemap.xml',
     gzip: true,
     defaults: {
@@ -187,7 +188,7 @@ export default {
   robots: {
     UserAgent: '*',
     Allow: '/',
-    Sitemap: 'https://octan.group/main-sitemap.xml',
+    Sitemap: 'https://octan.rw/main-sitemap.xml',
     Disallow: false,
   },
   responsiveLoader: {
